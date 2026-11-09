@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="dele.css">
+</head>
+<body>
+    <!-- Button for deleting a book -->
+    <h2>Delete Book</h2>
+    <label for="deleteBookId">Book ID:</label>
+    <input type="text" id="deleteBookId" name="deleteBookId" required>
+    <button onclick="deleteBook()">Delete Book</button>
+
+    <script>
+        // Function to delete a book
+        const deleteBook = async () => {
+            const bookId = document.getElementById('deleteBookId').value;
+
+            try {
+                const response = await axios.delete(`http://localhost:5000/api/books/${bookId}`);
+                console.log('Book deleted successfully:', response.data.message);
+                // Update UI or display success message
+            } catch (error) {
+                console.error('Error deleting book:', error.response.data);
+                // Display error message to user
+            }
+        };
+    </script>
+</body>
+</html>

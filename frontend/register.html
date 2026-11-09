@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" href="register.css" >
+<!-- <script type="text/javascript" src="js/aja.js"></script> -->
+</head>
+<body>
+<div>
+	<div class="new col-lg-8">
+		<form id="registrationForm">
+			<h2>sign up</h2>
+		  <div>
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" required>
+		  </div>
+		  <div>
+			  <label for="username">Username:</label>
+			  <input type="text" id="username" name="username" required>
+		  </div>
+		  <div>
+			  <label for="password">Password:</label>
+			  <input type="password" id="password" name="password" required>
+		  </div>
+		  <button type="submit">Register</button>
+		  <a href="login.html">Login<a>
+	  </form>
+
+</div>
+<script>
+	document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+	event.preventDefault();
+
+	const email = document.getElementById('email').value;
+	const username = document.getElementById('username').value;
+	const password = document.getElementById('password').value;
+
+	try {
+		const response = await axios.post('http://localhost:5000/api/auth', {
+			email,
+			username,
+			password
+		});
+		console.log('Registration successful!', response.data);
+		// Redirect to login page or perform any other action after successful registration
+	} catch (error) {
+		console.error('Registration failed:', error.response.data);
+		// Display error message to the user
+	}
+});
+</script>
+<script src="register.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

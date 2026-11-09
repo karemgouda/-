@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(54, 54, 54);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    width: 400px;
+    
+}
+h2{
+    text-align: center;
+}
+
+
+input {
+    width: 95%;
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 16px;
+}
+.radio{
+    width: 5%;
+}
+select{
+    width: 95%;
+    padding: 8px;
+}
+button{
+    width: 95%;
+    padding: 8px;
+    margin-top: 20px;
+    background-color: deepskyblue;
+}

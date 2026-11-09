@@ -1,0 +1,2540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <h1>Book Management System</h1>
+   <header>
+   
+       <div class="container">
+           <nav>
+               <ul>
+                   <li><a href="post.html">Add a Book</a></li>
+                   <li><a href="get.html">All Books</a></li>
+                   <li><a href="put.html">Update Books</a></li>
+                   <li><a href="dele.html">Delete Books</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header> 
+   <!-- <h1>catagory</h1>
+<header>
+   
+    <div class="container">
+        <nav>
+            <ul class="">
+                <li><a href="">Fiction</a></li>
+                <li><a href="">Acdamic</a></li>
+                <li><a href="">scientific</a></li>
+                <li><a href="">Religious</a></li>
+                <li><a href="">History</a></li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+
+  <title>Web Books</title>
+
+<meta content="Web genre: new releases and popular books, including Beware of Chicken by CasualFarmer, Oathbound Healer by Selkie Myth, Adventures in the Argo by Selkie..." name="description">
+<meta content="telephone=no" name="format-detection">
+<link href="https://www.goodreads.com/genres/web" rel="canonical">
+
+
+
+    <script type="text/javascript"> var ue_t0=window.ue_t0||+new Date();
+ </script>
+  <script type="text/javascript">
+    var ue_mid = "A1PQBFHBHS6YH1";
+    var ue_sn = "www.goodreads.com";
+    var ue_furl = "fls-na.amazon.com";
+    var ue_sid = "701-4333317-0895223";
+    var ue_id = "HA1VBDFJB8K6KGQR8NF0";
+
+    (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
+
+    if (window.ue && window.ue.tag) { window.ue.tag('genres:show:signed_out', ue.main_scope);window.ue.tag('genres:show:signed_out:desktop', ue.main_scope); }
+  </script>
+
+  <!-- * Copied from https://info.analytics.a2z.com/#/docs/data_collection/csa/onboard */ -->
+<script>
+  //<![CDATA[
+    !function(){function n(n,t){var r=i(n);return t&&(r=r("instance",t)),r}var r=[],c=0,i=function(t){return function(){var n=c++;return r.push([t,[].slice.call(arguments,0),n,{time:Date.now()}]),i(n)}};n._s=r,this.csa=n}();
+    
+    if (window.csa) {
+      window.csa("Config", {
+        "Application": "GoodreadsMonolith",
+        "Events.SushiEndpoint": "https://unagi.amazon.com/1/events/com.amazon.csm.csa.prod",
+        "Events.Namespace": "csa",
+        "CacheDetection.RequestID": "HA1VBDFJB8K6KGQR8NF0",
+        "ObfuscatedMarketplaceId": "A1PQBFHBHS6YH1"
+      });
+    
+      window.csa("Events")("setEntity", {
+        session: { id: "701-4333317-0895223" },
+        page: {requestId: "HA1VBDFJB8K6KGQR8NF0", meaningful: "interactive"}
+      });
+    }
+    
+    var e = document.createElement("script"); e.src = "https://m.media-amazon.com/images/I/41mrkPcyPwL.js"; document.head.appendChild(e);
+  //]]>
+</script>
+
+
+          <script type="text/javascript">
+        if (window.Mobvious === undefined) {
+          window.Mobvious = {};
+        }
+        window.Mobvious.device_type = 'desktop';
+        </script>
+
+
+  
+<script src="https://s.gr-assets.com/assets/webfontloader-b4c655e7cda84eb33da89e500feedc0c.js"></script>
+<script>
+//<![CDATA[
+
+  WebFont.load({
+    classes: false,
+    custom: {
+      families: ["Lato:n4,n7,i4", "Merriweather:n4,n7,i4"],
+      urls: ["https://s.gr-assets.com/assets/gr/fonts-e256f84093cc13b27f5b82343398031a.css"]
+    }
+  });
+
+//]]>
+</script>
+
+  <link rel="stylesheet" media="all" href="https://s.gr-assets.com/assets/goodreads-8b5e18ef9d982cc827111a0603edcdb3.css">
+
+  
+
+  <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images-f5630939f2056b14f661a80fa8503dca.css">
+
+  <script src="https://s.gr-assets.com/assets/desktop/libraries-c07ee2e4be9ade4a64546b3ec60b523b.js"></script>
+  <script src="https://s.gr-assets.com/assets/application-7674f7e14fa9dfac05d5f562734684a7.js"></script>
+
+    <script>
+  //<![CDATA[
+    var gptAdSlots = gptAdSlots || [];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+      var gads = document.createElement("script");
+      gads.async = true;
+      gads.type = "text/javascript";
+      var useSSL = "https:" == document.location.protocol;
+      gads.src = (useSSL ? "https:" : "http:") +
+      "//securepubads.g.doubleclick.net/tag/js/gpt.js";
+      var node = document.getElementsByTagName("script")[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+    // page settings
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting("sid", "osid.faa91d3a07e5ef28561d527e8d5dddbc");
+    googletag.pubads().setTargeting("grsession", "osid.faa91d3a07e5ef28561d527e8d5dddbc");
+    googletag.pubads().setTargeting("surface", "desktop");
+    googletag.pubads().setTargeting("signedin", "false");
+    googletag.pubads().setTargeting("gr_author", "false");
+    googletag.pubads().setTargeting("author", []);
+    googletag.pubads().setTargeting("shelf", ["web"]);
+    googletag.pubads().setTargeting("tags", ["4076"]);
+    googletag.pubads().setTargeting("gtargeting", "1");
+    googletag.pubads().setTargeting("resource", "genre_web");
+      googletag.pubads().enableAsyncRendering();
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs(true);
+      googletag.pubads().disableInitialLoad();
+      googletag.enableServices();
+    });
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    ! function(a9, a, p, s, t, A, g) {
+      if (a[a9]) return;
+    
+      function q(c, r) {
+        a[a9]._Q.push([c, r])
+      }
+      a[a9] = {
+      init: function() {
+        q("i", arguments)
+      },
+      fetchBids: function() {
+        q("f", arguments)
+      },
+      setDisplayBids: function() {},
+        _Q: []
+      };
+      A = p.createElement(s);
+      A.async = !0;
+      A.src = t;
+      g = p.getElementsByTagName(s)[0];
+      g.parentNode.insertBefore(A, g)
+    }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
+    
+    apstag.init({
+      pubID: '3211', adServer: 'googletag', bidTimeout: 4e3, deals: true, params: { aps_privacy: '1YN' }
+    });
+  //]]>
+</script>
+
+
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="nprHe+Pt0GFaqRi3Kz3RCQo4jW2SiaYKzYNxx6xwxVTfXJ6b9Hv2dl5thcoX1LX2gwVv4Vw0B6rZVVDVbl2LsQ==">
+
+  <meta name="request-id" content="HA1VBDFJB8K6KGQR8NF0">
+
+    <script src="https://s.gr-assets.com/assets/react_client_side/external_dependencies-2e2b90fafc.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/site_header-ec6024e860.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/custom_react_ujs-b1220d5e0a4820e90b905c302fc5cb52.js" defer="defer"></script>
+
+
+  
+
+  
+  
+  
+
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Goodreads">
+
+    <meta name="description" content="Web genre: new releases and popular books, including Beware of Chicken by CasualFarmer, Oathbound Healer by Selkie Myth, Adventures in the Argo by Selkie...">
+
+
+  <meta content="summary" name="twitter:card">
+<meta content="@goodreads" name="twitter:site">
+<meta content="Web Books" name="twitter:title">
+<meta content="Web genre: new releases and popular books, including Beware of Chicken by CasualFarmer, Oathbound Healer by Selkie Myth, Adventures in the Argo by Selkie..." name="twitter:description">
+
+
+  <meta name="verify-v1" content="cEf8XOH0pulh1aYQeZ1gkXHsQ3dMPSyIGGYqmF53690=">
+  <meta name="google-site-verification" content="PfFjeZ9OK1RrUrKlmAPn_iZJ_vgHaZO1YQ-QlG2VsJs">
+  <meta name="apple-itunes-app" content="app-id=355833469">
+
+
+
+
+<div data-react-class="ReactComponents.StoresInitializer" data-react-props="{}"><noscript data-reactid=".1n9qbwt2q4k" data-react-checksum="-1207889582"></noscript></div>
+
+<script src="https://s.gr-assets.com/assets/fb_dep_form-e2e4a0d9dc062011458143c32b2d789b.js"></script>
+
+<div class="content" id="bodycontainer" style="">
+    <script>
+  //<![CDATA[
+    var initializeGrfb = function() {
+      $grfb.initialize({
+        appId: "2415071772"
+      });
+    };
+    if (typeof $grfb !== "undefined") {
+      initializeGrfb();
+    } else {
+      window.addEventListener("DOMContentLoaded", function() {
+        if (typeof $grfb !== "undefined") {
+          initializeGrfb();
+        }
+      });
+    }
+  //]]>
+</script>
+
+<script>
+  //<![CDATA[
+    function loadScript(url, callback) {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+    
+      if (script.readyState) {  //Internet Explorer
+          script.onreadystatechange = function() {
+            if (script.readyState == "loaded" ||
+                    script.readyState == "complete") {
+              script.onreadystatechange = null;
+              callback();
+            }
+          };
+      } else {  //Other browsers
+        script.onload = function() {
+          callback();
+        };
+      }
+    
+      script.src = url;
+      document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+    function initAppleId() {
+      AppleID.auth.init({
+        clientId : 'com.goodreads.app', 
+        scope : 'name email',
+        redirectURI: 'https://www.goodreads.com/apple_users/sign_in_with_apple_web',
+        state: 'apple_oauth_state_a0cec2ec-8e9f-4938-9110-ffb3ec115728'
+      });
+    }
+    
+    var initializeSiwa = function() {
+      var APPLE_SIGN_IN_JS_URL =  "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+      loadScript(APPLE_SIGN_IN_JS_URL, initAppleId);
+    };
+    if (typeof AppleID !== "undefined") {
+      initAppleId();
+    } else {
+      initializeSiwa();
+    }
+  //]]>
+</script>
+
+<!-- <div class="siteHeader">
+<div data-react-class="ReactComponents.HeaderStoreConnector" data-react-props="{&quot;myBooksUrl&quot;:&quot;/review/list?ref=nav_mybooks&quot;,&quot;browseUrl&quot;:&quot;/book?ref=nav_brws&quot;,&quot;recommendationsUrl&quot;:&quot;/recommendations?ref=nav_brws_recs&quot;,&quot;choiceAwardsUrl&quot;:&quot;/choiceawards?ref=nav_brws_gca&quot;,&quot;genresIndexUrl&quot;:&quot;/genres?ref=nav_brws_genres&quot;,&quot;giveawayUrl&quot;:&quot;/giveaway?ref=nav_brws_giveaways&quot;,&quot;exploreUrl&quot;:&quot;/book?ref=nav_brws_explore&quot;,&quot;homeUrl&quot;:&quot;/?ref=nav_home&quot;,&quot;listUrl&quot;:&quot;/list?ref=nav_brws_lists&quot;,&quot;newsUrl&quot;:&quot;/news?ref=nav_brws_news&quot;,&quot;communityUrl&quot;:&quot;/group?ref=nav_comm&quot;,&quot;groupsUrl&quot;:&quot;/group?ref=nav_comm_groups&quot;,&quot;quotesUrl&quot;:&quot;/quotes?ref=nav_comm_quotes&quot;,&quot;featuredAskAuthorUrl&quot;:&quot;/ask_the_author?ref=nav_comm_askauthor&quot;,&quot;autocompleteUrl&quot;:&quot;/book/auto_complete&quot;,&quot;defaultLogoActionUrl&quot;:&quot;/&quot;,&quot;topFullImage&quot;:{&quot;clickthroughUrl&quot;:&quot;https://www.goodreads.com/blog/show/2751?ref=BigBooksSummer24_eb&quot;,&quot;altText&quot;:&quot;Readers' Most Anticipated Books for Summer 2024&quot;,&quot;backgroundColor&quot;:&quot;#FFD767&quot;,&quot;xs&quot;:{&quot;1x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1714676956i/399.jpg&quot;,&quot;2x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1714676962i/400.jpg&quot;},&quot;md&quot;:{&quot;1x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1714676945i/397.jpg&quot;,&quot;2x&quot;:&quot;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1714676951i/398.jpg&quot;}},&quot;logo&quot;:{&quot;clickthroughUrl&quot;:&quot;/&quot;,&quot;altText&quot;:&quot;Goodreads Home&quot;},&quot;searchPath&quot;:&quot;/search&quot;,&quot;newReleasesUrl&quot;:&quot;/book/popular_by_date/2024/5?ref=nav_brws_newrels&quot;,&quot;signInUrl&quot;:&quot;/user/sign_in&quot;,&quot;signUpUrl&quot;:&quot;/user/sign_up&quot;,&quot;signInWithReturnUrl&quot;:true,&quot;deployServices&quot;:[],&quot;defaultLogoAltText&quot;:&quot;Goodreads Home&quot;,&quot;mobviousDeviceType&quot;:&quot;desktop&quot;}"><header data-reactid=".1b9h8orx8tm"><div class="siteHeader__topFullImageContainer" style="background-color:#FFD767;" data-reactid=".1b9h8orx8tm.0"><a class="siteHeader__topFullImageLink" href="https://www.goodreads.com/blog/show/2751?ref=BigBooksSummer24_eb" data-reactid=".1b9h8orx8tm.0.0"></a></div><div class="siteHeader__topLine gr-box gr-box--withShadow" data-reactid=".1b9h8orx8tm.1"></div><div class="headroom-wrapper" data-reactid=".1b9h8orx8tm.2" style="height: 50px;"><div style="position:relative;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);" class="headroom headroom--unfixed" data-reactid=".1b9h8orx8tm.2.0"></div></div></header></div>
+</div> -->
+<!-- <div class="siteHeaderBottomSpacer"></div> -->
+
+  
+
+  <div class="mainContentContainer ">
+
+
+      
+
+    <div class="mainContent ">
+        <div id="premiumAdTop">
+
+          <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--pushdown&quot;}"><noscript data-reactid=".0"></noscript></div>
+
+        </div>
+      
+      <div class="mainContentFloat ">
+
+        <div id="flashContainer">
+
+
+
+
+</div>
+
+        
+
+
+<div class="leftContainer">
+  <!-- <div class="breadcrumbs">
+    <a href="/genres">Genres</a> &gt; <a href="/genres/internet">Internet</a>
+  </div> -->
+
+  <div class="genreHeader">
+    <h1 class="left">
+        Web
+
+    </h1>
+
+
+    <div class="clear"></div>
+  </div>
+
+  <br>
+
+
+      
+<div class="coverBigBox clearFloats bigBox" show_header="true"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/genres/most_read/web">Most Read This Week Tagged "Web"</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_60888209">
+    <a href="/book/show/60888209-beware-of-chicken"><img alt="Beware of Chicken (Beware of Chicken, #1)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1650996799l/60888209._SY475_.jpg"></a>
+</div>
+
+
+  
+
+  
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[  
+
+  function submitShelfLink(unique_id, book_id, shelf_id, shelf_name, submit_form, exclusive) {
+    var checkbox_id = 'shelf_name_' + unique_id + '_' + shelf_id;
+    var element = document.getElementById(checkbox_id)
+
+    var checked = element.checked
+    if (checked && exclusive) {
+      // can't uncheck a radio by clicking it!
+      return
+    }
+    if(document.getElementById("savingMessage")){
+      Element.show('savingMessage')
+    }
+    var element_id = 'shelfInDropdownName_' + unique_id + '_' + shelf_id;
+    Element.update(element_id, "saving...");
+    if (submit_form) {
+      Element.hide('shelfDropdown_' + unique_id)
+      var form = document.getElementById('addBookForm' + book_id)
+      if (form) {
+        form.shelf.value = shelf_name
+        form.onsubmit()
+      }
+    }
+    else {
+      var action = checked ? 'remove' : ''
+      element.checked = !element.checked
+      new Ajax.Request('/shelf/add_to_shelf', {asynchronous:true, evalScripts:true, onSuccess:function(request){shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name)}, parameters:'book_id=' + book_id + '&name=' + shelf_name + '&a=' + action + '&authenticity_token=' + encodeURIComponent('+wl2g4GF/9ma24d1TnKfHt6xU8Kes9PqZxj7IQMNQUG6zy9jlhPZzp4fGghym/vhV4yxTlAOckpzztozwSAPpA==')})
+    }
+  }
+
+  function shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name) {
+    Element.update('shelfListfalse_' + book_id, request.responseText)
+    afterShelfSave(checkbox_id, element_id, unique_id, shelf_name.escapeHTML())
+  }
+
+  function refreshGroupBox(group_id, book_id) {
+    new Ajax.Updater('addGroupBooks' + book_id + '', '/group/add_book_box', {asynchronous:true, evalScripts:true, onSuccess:function(request){refreshGroupBoxComplete(request, book_id);}, parameters:'id=' + group_id + '&book_id=' + book_id + '&refresh=true' + '&authenticity_token=' + encodeURIComponent('EYnq5RYsadTn8PuvTquqsNZ138PTZ2Q5Im2E3x/l/xJQT7MFAbpPw+M0ZtJyQs5PX0g9Tx3axZk2u6XN3cix9w==')})
+  }
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_60888209'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/60888209-beware-of-chicken?from_choice=false&amp;from_home_module=false\">Beware of Chicken (Beware of Chicken, #1)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/21230793.CasualFarmer\">CasualFarmer<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><\/span> 4.57 avg rating &mdash; 7,731 ratings<\/span>            &mdash; published 2022\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer677416611629465062\">A laugh-out-loud, slice-of-life martial-arts fantasy about . . . farming????\n\nJin Rou wanted to be a cultivator. A man powerful enough to defy the heavens. A master of martial arts. A lord of spiritual power. Unfortunately for him, he died, and now I’m stuck in his body.\n\nArrogant Masters? Heavenly <\/span>\n  <span id=\"freeText677416611629465062\" style=\"display:none\">A laugh-out-loud, slice-of-life martial-arts fantasy about . . . farming????\n\nJin Rou wanted to be a cultivator. A man powerful enough to defy the heavens. A master of martial arts. A lord of spiritual power. Unfortunately for him, he died, and now I’m stuck in his body.\n\nArrogant Masters? Heavenly Tribulations? All that violence and bloodshed? Yeah, no thanks. I’m getting out of here.\n\nFarm life sounds pretty great. Tilling a field by hand is fun when you’ve got the strength of ten men—though maybe I shouldn’t have fed those Spirit Herbs to my pet rooster. I’m not used to seeing a chicken move with such grace . . . but Qi makes everything kind of wonky, so it’s probably fine.\n\nInstead of a lifetime of battle, my biggest concerns are building a house, the size of my harvest, and the way the girl from the nearby village glares at me when I tease her.\n\nA slow, simple, fulfilling life in a place where nothing exciting or out of the ordinary ever happens . . . right?\n\nThe first volume of the blockbuster progression-fantasy series—with more than 16 million views on Royal Road—now available on Kindle, Kindle Unlimited, and Audible!<\/span>\n  <a data-text-id=\"677416611629465062\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_60888209').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_60888209').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_60888209').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_60888209').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78786087">
+    <a href="/book/show/78786087-oathbound-healer"><img alt="Oathbound Healer (Beneath the Dragoneye Moons, #1)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673903501l/78786087._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78786087'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78786087-oathbound-healer?from_choice=false&amp;from_home_module=false\">Oathbound Healer (Beneath the Dragoneye Moons, #1)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.31 avg rating &mdash; 2,377 ratings<\/span>            &mdash; published 2020\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer939252949713170432\">Elaine is ripped from this world to Pallos, a land of unlimited possibilities made real by a grand System governing classes, skills, and magic.\n\nAn ideal society? What is this, a fantasy novel?\n\nAdventures? Right this way!\n\nA Grand quest? Nah.\n\nFriends and loot? Heck yes!\n\nHumans are the top dog? No<\/span>\n  <span id=\"freeText939252949713170432\" style=\"display:none\">Elaine is ripped from this world to Pallos, a land of unlimited possibilities made real by a grand System governing classes, skills, and magic.\n\nAn ideal society? What is this, a fantasy novel?\n\nAdventures? Right this way!\n\nA Grand quest? Nah.\n\nFriends and loot? Heck yes!\n\nHumans are the top dog? Nope, dinosaur food.\n\nHealing and fighting? Well, everything is trying to eat her.\n\nJoin Elaine as she travels around Pallos, discovering all the wonders and mysteries of the world, trying to find a place where she belongs, hunting those elusive mangos, all while the ominous Dragoneye Moons watch her every move.<\/span>\n  <a data-text-id=\"939252949713170432\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78786087').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78786087').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78786087').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78786087').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78787060">
+    <a href="/book/show/78787060-adventures-in-the-argo"><img alt="Adventures in the Argo (Beneath the Dragoneye Moons, #2)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673903623l/78787060.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78787060'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78787060-adventures-in-the-argo?from_choice=false&amp;from_home_module=false\">Adventures in the Argo (Beneath the Dragoneye Moons, #2)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.43 avg rating &mdash; 1,782 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer6325363146484231463\">An Ideal Society? What is this, a fantasy novel?\nElaine has been field promoted to a full Range, while at the same time developing her new Celestial healing and Fire magic. Yet Kerberos, her fiancé who&apos;ll stop at nothing to get her back, casts a long shadow. Society as a whole would love nothing mor<\/span>\n  <span id=\"freeText6325363146484231463\" style=\"display:none\">An Ideal Society? What is this, a fantasy novel?\nElaine has been field promoted to a full Range, while at the same time developing her new Celestial healing and Fire magic. Yet Kerberos, her fiancé who\'ll stop at nothing to get her back, casts a long shadow. Society as a whole would love nothing more than to grind her down, to remind her that she\'s a girl, and a second-class individual. Endless dinosaurs roam, looking for tasty, pint-sized teenager snacks. Finally, Perinthus is devastated by a deadly plague, killing hundreds every day.\n\nElaine must fight the plague with every point of mana she has, while getting used to the horrors of being a Fire mage, breaking free from Kerberos\'s grasp, and getting to the bottom of things.\n\nIf she\'s lucky, she might even find some delicious mangos.<\/span>\n  <a data-text-id=\"6325363146484231463\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78787060').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78787060').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78787060').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78787060').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78787843">
+    <a href="/book/show/78787843-ranger-s-dawn"><img alt="Ranger's Dawn (Beneath the Dragoneye Moons, #3)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673903709l/78787843.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78787843'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78787843-ranger-s-dawn?from_choice=false&amp;from_home_module=false\">Ranger&#39;s Dawn (Beneath the Dragoneye Moons, #3)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.42 avg rating &mdash; 1,619 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer146829548306571505\">Let the bodies hit the floor!\n\nRanger Academy is famously hostile to its attendees. From the weather shifting from hail to tropical storms in minutes, to lethal rocks fired inches from the trainee&apos;s heads, bad food and salty water, to profanities yelled by the Drill Instructors and whispers of failu<\/span>\n  <span id=\"freeText146829548306571505\" style=\"display:none\">Let the bodies hit the floor!\n\nRanger Academy is famously hostile to its attendees. From the weather shifting from hail to tropical storms in minutes, to lethal rocks fired inches from the trainee\'s heads, bad food and salty water, to profanities yelled by the Drill Instructors and whispers of failure at night, everything on the island is designed to make the trainees quit.\n\nAt the same time, the classes are fascinating. Wilderness survival. Team tactics. Gladiatorial combat vs dinosaurs. Flying. And the dozens of other classes, designed to forge the Trainees into the elite special forces of Remus - Rangers.\n\nNaturally, Elaine wouldn\'t be anywhere else. She needs to prove herself. For Julius, and his faith in her. For Artemis, so she won\'t be disappointed. Most of all, for herself, for her own freedom and independence.\n\nFor a certain definition.\n\nElaine is not alone. The other Trainees help, with a bond forged in hell. Night, her mysterious mentor. Years of prep and hard work with her old Team 4.\n\nWill it be enough?\n\nIf it is - What happens next?<\/span>\n  <a data-text-id=\"146829548306571505\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78787843').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78787843').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78787843').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78787843').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78788631">
+    <a href="/book/show/78788631-beyond-the-wall"><img alt="Beyond the Wall (Beneath the Dragoneye Moons, #4)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673903824l/78788631.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78788631'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78788631-beyond-the-wall?from_choice=false&amp;from_home_module=false\">Beyond the Wall (Beneath the Dragoneye Moons, #4)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.42 avg rating &mdash; 1,458 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer16773197200595862137\">The Formorians, led by the gigantic Queens, have breached humanity&apos;s last line of defense! Elaine, now Sentinel Dawn, and the rest of the Sentinels need to rush to the front lines, to attempt to stabilize the situation, and bring the 2500-year long war against the Formorians to a grand finale. And y<\/span>\n  <span id=\"freeText16773197200595862137\" style=\"display:none\">The Formorians, led by the gigantic Queens, have breached humanity\'s last line of defense! Elaine, now Sentinel Dawn, and the rest of the Sentinels need to rush to the front lines, to attempt to stabilize the situation, and bring the 2500-year long war against the Formorians to a grand finale. And yet, beyond them lurks an even greater danger. What could\'ve possibly driven the Formorian Queens and Royal Guards out of their lairs, into human territory? Will Elaine and the Sentinels have to pay a terrible price to save humanity? Or will civilization be smashed, and humans scattered to the winds? And what, exactly, are the Dragoneye Moons?<\/span>\n  <a data-text-id=\"16773197200595862137\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78788631').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78788631').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78788631').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78788631').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78789539">
+    <a href="/book/show/78789539-moonveiled-journeys"><img alt="Moonveiled Journeys (Beneath the Dragoneye Moons, #5)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673903951l/78789539._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78789539'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78789539-moonveiled-journeys?from_choice=false&amp;from_home_module=false\">Moonveiled Journeys (Beneath the Dragoneye Moons, #5)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.43 avg rating &mdash; 1,389 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer13829328165537907486\">Journey to the Center of Pallos!\n\nLule is dead. Toke is missing.\n\nEscaping from the devastating battle between the dragon and the Guardians, Elaine and the dwarves have fallen deep into an abandoned, unused mineshaft. Danger lurks around every corner, from starvation, traps, orcs, and more! Elaine m<\/span>\n  <span id=\"freeText13829328165537907486\" style=\"display:none\">Journey to the Center of Pallos!\n\nLule is dead. Toke is missing.\n\nEscaping from the devastating battle between the dragon and the Guardians, Elaine and the dwarves have fallen deep into an abandoned, unused mineshaft. Danger lurks around every corner, from starvation, traps, orcs, and more! Elaine must survive in the hostile stone tomb, cut away from the sky, away from her friends and comrades. She needs to find a way to escape, or be buried forever.\n\nWeren\'t there rumors of the dragon\'s lair being down here?<\/span>\n  <a data-text-id=\"13829328165537907486\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78789539').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78789539').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78789539').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78789539').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78790668">
+    <a href="/book/show/78790668-return-to-remus"><img alt="Return to Remus (Beneath the Dragoneye Moons, #7)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673904114l/78790668._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78790668'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78790668-return-to-remus?from_choice=false&amp;from_home_module=false\">Return to Remus (Beneath the Dragoneye Moons, #7)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.39 avg rating &mdash; 1,220 ratings<\/span>            &mdash; published 2022\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer8752204814616605517\">Return to Remus!\n\nAfter adventuring beyond the wall for over a year, Elaine has her triumphant return home! A high level doesn&apos;t mean all challenges are solved though. She&apos;s got a brand new hatchling to try and keep alive. General Augustus has staged a military coup, becoming Emperor Augustus. Juliu<\/span>\n  <span id=\"freeText8752204814616605517\" style=\"display:none\">Return to Remus!\n\nAfter adventuring beyond the wall for over a year, Elaine has her triumphant return home! A high level doesn\'t mean all challenges are solved though. She\'s got a brand new hatchling to try and keep alive. General Augustus has staged a military coup, becoming Emperor Augustus. Julius is missing. Artemis is enslaved.\n\nWill she be able to keep Auri alive? Free Artemis? Find out what happened with Julius? And can she avoid the machinations of the new Emperor?\n\nMost importantly-\n\nIs her family still alive?<\/span>\n  <a data-text-id=\"8752204814616605517\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78790668').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78790668').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78790668').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78790668').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_78790069">
+    <a href="/book/show/78790069-immortal-moments"><img alt="Immortal Moments (Beneath the Dragoneye Moons, #6)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673904023l/78790069.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_78790069'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/78790069-immortal-moments?from_choice=false&amp;from_home_module=false\">Immortal Moments (Beneath the Dragoneye Moons, #6)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.27 avg rating &mdash; 1,214 ratings<\/span>            &mdash; published 2022\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer14222851823987361882\">Romance is in the air!\n\nElaine is still far from home. Far from Remus. Her friends and family don&apos;t even know if she&apos;s alive.\n\nHowever, not all is lost. Elaine has fallen in with some elves, who are willing to let Elaine tag along while they head in the general direction of her home. They&apos;re off hun<\/span>\n  <span id=\"freeText14222851823987361882\" style=\"display:none\">Romance is in the air!\n\nElaine is still far from home. Far from Remus. Her friends and family don\'t even know if she\'s alive.\n\nHowever, not all is lost. Elaine has fallen in with some elves, who are willing to let Elaine tag along while they head in the general direction of her home. They\'re off hunting shimagu, deadly bodyjackers that steal away all autonomy.\n\nElaine finds a small measure of comfort in Serondes\'s arms, experimenting with her first relationship.\n\nExperimenting with granting others Immortality.\n\nAs Elaine travels with the elves, she needs to wrestle with numerous questions. Is the relationship with Serondes going anywhere? What\'s in the egg that she\'s keeping safe and warm? Can the elves be trusted? What happened with the civil war in Remus? And should the shimagu be treated like people, or like parasites?<\/span>\n  <a data-text-id=\"14222851823987361882\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_78790069').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_78790069').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_78790069').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_78790069').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_62917275">
+    <a href="/book/show/62917275-new-horizons"><img alt="New Horizons (Beneath the Dragoneye Moons, #8)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1665326796l/62917275._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_62917275'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/62917275-new-horizons?from_choice=false&amp;from_home_module=false\">New Horizons (Beneath the Dragoneye Moons, #8)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/20890132.Selkie_Myth\">Selkie Myth<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.35 avg rating &mdash; 1,053 ratings<\/span>            &mdash; published 2022\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer5175377599438380199\">Elaine&apos;s mission through the fairy ring went horribly wrong, and she finds herself in Pallos once again - over 20,000 years in the future. The only things she has are her friends, her magic, and the clothes on her back. Fighting their way out of the wilderness, they quickly meet Iona, a wandering pa<\/span>\n  <span id=\"freeText5175377599438380199\" style=\"display:none\">Elaine\'s mission through the fairy ring went horribly wrong, and she finds herself in Pallos once again - over 20,000 years in the future. The only things she has are her friends, her magic, and the clothes on her back. Fighting their way out of the wilderness, they quickly meet Iona, a wandering paladin of the Valkyrie order. She\'s heading to the School of Sorcery and Spellcraft, and Elaine joins her. To learn wizardry. To figure out her place in the world, and where she wants to go next. To get her third class. To kiss cute women. To eat some tasty mangos.\n\nTo read books, at long last.<\/span>\n  <a data-text-id=\"5175377599438380199\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_62917275').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_62917275').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_62917275').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_62917275').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_57065516">
+    <a href="/book/show/57065516-the-perfect-run"><img alt="The Perfect Run" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1613358970l/57065516._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_57065516'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/57065516-the-perfect-run?from_choice=false&amp;from_home_module=false\">The Perfect Run<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/15970882.Maxime_J_Durand\">Maxime J. Durand<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.35 avg rating &mdash; 2,882 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer1293403013512320663\">Ryan &quot;Quicksave&quot; Romano is an eccentric adventurer with a strange power: he can create a save-point in time and redo his life whenever he dies. Arriving in New Rome, the glitzy capital of sin of a rebuilding Europe, he finds the city torn between mega-corporations, sponsored heroes, superpowered cri<\/span>\n  <span id=\"freeText1293403013512320663\" style=\"display:none\">Ryan &quot;Quicksave&quot; Romano is an eccentric adventurer with a strange power: he can create a save-point in time and redo his life whenever he dies. Arriving in New Rome, the glitzy capital of sin of a rebuilding Europe, he finds the city torn between mega-corporations, sponsored heroes, superpowered criminals, and true monsters. It\'s a time of chaos, where potions can grant the power to rule the world and dangers lurk everywhere.\n\nRyan only sees different routes; and from Hero to Villain, he has to try them all. Only then will he achieve his perfect ending... no matter how many loops it takes.<\/span>\n  <a data-text-id=\"1293403013512320663\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_57065516').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_57065516').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_57065516').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_57065516').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_58876397">
+    <a href="/book/show/58876397-cinnamon-bun-3"><img alt="Cinnamon Bun 3 (Cinnamon Bun, #3)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630171366l/58876397._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_58876397'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/58876397-cinnamon-bun-3?from_choice=false&amp;from_home_module=false\">Cinnamon Bun 3 (Cinnamon Bun, #3)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/8097592.Ravens_Dagger\">Ravens Dagger<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.27 avg rating &mdash; 350 ratings<\/span>            &mdash; published 2021\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer6642614358979041979\">A Wholesome LitRPG\n\nBroccoli and her closest friends have discovered a terrible plot...one that might spark a war between the Nesting Kingdom and the Kingdom of Sylphfree.\n\nIt’s up to the three of them to cross an entire continent in order to reach Sylphfree and undo the machinations of Broccoli’s m<\/span>\n  <span id=\"freeText6642614358979041979\" style=\"display:none\">A Wholesome LitRPG\n\nBroccoli and her closest friends have discovered a terrible plot...one that might spark a war between the Nesting Kingdom and the Kingdom of Sylphfree.\n\nIt’s up to the three of them to cross an entire continent in order to reach Sylphfree and undo the machinations of Broccoli’s mysterious nemesis. Navigating such a grand distance won’t be easy, however, not with dastardly sky pirates, dangerous dungeons, and adorable new friends to distract the bunch along the way! At this rate, Broccoli’s inability to get anywhere without sticking her neck into trouble is going to make Amaryllis shed feathers.<\/span>\n  <a data-text-id=\"6642614358979041979\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_58876397').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_58876397').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_58876397').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_58876397').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_54311585">
+    <a href="/book/show/54311585-cinnamon-bun"><img alt="Cinnamon Bun (Cinnamon Bun, #1)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593396004l/54311585._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_54311585'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/54311585-cinnamon-bun?from_choice=false&amp;from_home_module=false\">Cinnamon Bun (Cinnamon Bun, #1)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/47649275.Ravensdagger\">Ravensdagger<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.10 avg rating &mdash; 842 ratings<\/span>            &mdash; published 2020\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer14221634922176123533\">A Wholesome LitRPG\n\nThe world called out for a hero to purge it of a great evil. It received Broccoli Bunch, explorer, expert cleaner, occasional ghost-buster, and full time Cinnamon Bun.\n\nFeatures include:\nTalking enemies into becoming friends\nHugging menu boxes\nAwesome overpowered skills (such as <\/span>\n  <span id=\"freeText14221634922176123533\" style=\"display:none\">A Wholesome LitRPG\n\nThe world called out for a hero to purge it of a great evil. It received Broccoli Bunch, explorer, expert cleaner, occasional ghost-buster, and full time Cinnamon Bun.\n\nFeatures include:\nTalking enemies into becoming friends\nHugging menu boxes\nAwesome overpowered skills (such as Cleaning, and Gardening)\nAnd more adventure than you could shake a stick at!<\/span>\n  <a data-text-id=\"14221634922176123533\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_54311585').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_54311585').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_54311585').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_54311585').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_38479592">
+    <a href="/book/show/38479592-ward"><img alt="Ward (Parahumans, #2)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518340348l/38479592._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_38479592'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/38479592-ward?from_choice=false&amp;from_home_module=false\">Ward (Parahumans, #2)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/6432921.Wildbow\">Wildbow<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.01 avg rating &mdash; 847 ratings<\/span>            &mdash; published 2020\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer1662814849927497173\">This work is a sequel, the events following that of the web serial Worm. It is not meant to be read in isolation, and would-be readers should check out the prior work first.\n\nSynopsis:\n\nThe unwritten rules that govern the fights and outright wars between ‘capes’ have been amended: everyone gets thei<\/span>\n  <span id=\"freeText1662814849927497173\" style=\"display:none\">This work is a sequel, the events following that of the web serial Worm. It is not meant to be read in isolation, and would-be readers should check out the prior work first.\n\nSynopsis:\n\nThe unwritten rules that govern the fights and outright wars between ‘capes’ have been amended: everyone gets their second chance. It’s an uneasy thing to come to terms with when notorious supervillains and even monsters are playing at being hero. The world ended two years ago, and as humanity straddles the old world and the new, there aren’t records, witnesses, or facilities to answer the villains’ past actions in the present. One of many compromises, uneasy truces and deceptions that are starting to splinter as humanity rebuilds.\n\nNone feel the injustice of this new status quo or the lack of established footing more than the past residents of the parahuman asylums. The facilities hosted parahumans and their victims, but the facilities are ruined or gone; one of many fragile ex-patients is left to find a place in a fractured world. She’s perhaps the person least suited to have anything to do with this tenuous peace or to stand alongside these false heroes. She’s put in a position to make the decision: will she compromise to help forge what they call, with dark sentiment, a second golden age? Or will she stand tall as a gilded dark age dawns?<\/span>\n  <a data-text-id=\"1662814849927497173\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_38479592').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_38479592').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_38479592').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_38479592').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_55599729">
+    <a href="/book/show/55599729-cinnamon-bun-2"><img alt="Cinnamon Bun 2 (Cinnamon Bun, #2)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602180071l/55599729._SY475_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_55599729'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/55599729-cinnamon-bun-2?from_choice=false&amp;from_home_module=false\">Cinnamon Bun 2 (Cinnamon Bun, #2)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/8097592.Ravens_Dagger\">Ravens Dagger<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.27 avg rating &mdash; 518 ratings<\/span>            &mdash; published 2020\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer12142159807223287108\">A Wholesome LitRPG\n\nBroccoli Bunch is getting the hang of the explorer lifestyle, and loving every minute of it. Her adventures have dragged her and her new best friend Amaryllis across entire countries in pursuit of more fun, and even more friends.\n\nThere are dragons to intimidate, tournaments to l<\/span>\n  <span id=\"freeText12142159807223287108\" style=\"display:none\">A Wholesome LitRPG\n\nBroccoli Bunch is getting the hang of the explorer lifestyle, and loving every minute of it. Her adventures have dragged her and her new best friend Amaryllis across entire countries in pursuit of more fun, and even more friends.\n\nThere are dragons to intimidate, tournaments to lose, and secretive plots to stumble across!<\/span>\n  <a data-text-id=\"12142159807223287108\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_55599729').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_55599729').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_55599729').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_55599729').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover372839_58952557">
+    <a href="/book/show/58952557-internet-for-the-people"><img alt="Internet for the People" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631133784l/58952557.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover372839_58952557'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/58952557-internet-for-the-people?from_choice=false&amp;from_home_module=false\">Internet for the People<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/4512598.Ben_Tarnoff\">Ben Tarnoff<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.98 avg rating &mdash; 410 ratings<\/span>            &mdash; published 2022\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer3927418015763866519\">In Internet for the People, leading tech writer Ben Tarnoff offers an answer. The internet is broken, he argues, because it is owned by private firms and run for profit. Google annihilates your privacy and Facebook amplifies right-wing propaganda because it is profitable to do so. But the internet w<\/span>\n  <span id=\"freeText3927418015763866519\" style=\"display:none\">In Internet for the People, leading tech writer Ben Tarnoff offers an answer. The internet is broken, he argues, because it is owned by private firms and run for profit. Google annihilates your privacy and Facebook amplifies right-wing propaganda because it is profitable to do so. But the internet wasn\'t always like this—it had to be remade for the purposes of profit maximization, through a years-long process of privatization that turned a small research network into a powerhouse of global capitalism. Tarnoff tells the story of the privatization that made the modern internet, and which set in motion the crises that consume it today.\n\nThe solution to those crises is straightforward: deprivatize the internet. Deprivatization aims at creating an internet where people, and not profit, rule. It calls for shrinking the space of the market and diminishing the power of the profit motive. It calls for abolishing the walled gardens of Google, Facebook, and the other giants that dominate our digital lives and developing publicly and cooperatively owned alternatives that encode real democratic control. To build a better internet, we need to change how it is owned and organized. Not with an eye towards making markets work better, but towards making them less dominant. Not in order to create a more competitive or more rule-bound version of privatization, but to overturn it. Otherwise, a small number of executives and investors will continue to make choices on everyone’s behalf, and these choices will remain tightly bound by the demands of the market. It\'s time to demand an internet by, and for, the people now.<\/span>\n  <a data-text-id=\"3927418015763866519\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover372839_58952557').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover372839_58952557').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover372839_58952557').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover372839_58952557').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+  <div class="clear"></div>
+  <div class="moreLink">
+      <a class="actionLink" href="/genres/most_read/web">More most read this week tagged "web"...</a>
+  </div>
+
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+
+
+
+
+      
+<div class="coverBigBox clearFloats bigBox" show_header="true"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/shelf/show/web">Web Books</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_18197267">
+    <a href="/book/show/18197267-don-t-make-me-think-revisited"><img alt="Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (Voices That Matter)" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1711564661l/18197267._SX318_.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_18197267'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited?from_choice=false&amp;from_home_module=false\">Don&#39;t Make Me Think, Revisited: A Common Sense Approach to Web Usability<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/2298.Steve_Krug\">Steve Krug<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.24 avg rating &mdash; 29,153 ratings<\/span>            &mdash; published 2000\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer11486608134196772357\">Since Don’t Make Me Think was first published in 2000, over 400,000 Web designers and developers have relied on Steve Krug’s guide to help them understand the principles of intuitive navigation and information design.\n\nIn this 3rd edition, Steve returns with fresh perspective to reexamine the princi<\/span>\n  <span id=\"freeText11486608134196772357\" style=\"display:none\">Since Don’t Make Me Think was first published in 2000, over 400,000 Web designers and developers have relied on Steve Krug’s guide to help them understand the principles of intuitive navigation and information design.\n\nIn this 3rd edition, Steve returns with fresh perspective to reexamine the principles that made Don’t Make Me Think a classic-–with updated examples and a new chapter on mobile usability. And it’s still short, profusely illustrated…and best of all–fun to read.\n\nIf you’ve read it before, you’ll rediscover what made Don’t Make Me Think so essential to Web designers and developers around the world. If you’ve never read it, you’ll see why so many people have said it should be required reading for anyone working on Web sites.<\/span>\n  <a data-text-id=\"11486608134196772357\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_18197267').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_18197267').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_18197267').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_18197267').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_9815906">
+    <a href="/book/show/9815906-responsive-web-design"><img alt="Responsive Web Design" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1291401033l/9815906.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_9815906'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/9815906-responsive-web-design?from_choice=false&amp;from_home_module=false\">Responsive Web Design<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/16360.Ethan_Marcotte\">Ethan Marcotte<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.14 avg rating &mdash; 3,652 ratings<\/span>            &mdash; published 2011\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer4423529471209532389\">From mobile browsers to netbooks and tablets, users are visiting your sites from an increasing array of devices and browsers. Are your designs ready? Learn how to think beyond the desktop and craft beautiful designs that anticipate and respond to your users’ needs. Ethan Marcotte will explore CSS te<\/span>\n  <span id=\"freeText4423529471209532389\" style=\"display:none\">From mobile browsers to netbooks and tablets, users are visiting your sites from an increasing array of devices and browsers. Are your designs ready? Learn how to think beyond the desktop and craft beautiful designs that anticipate and respond to your users’ needs. Ethan Marcotte will explore CSS techniques and design principles, including fluid grids, flexible images, and media queries, demonstrating how you can deliver a quality experience to your users no matter how large (or small) their display.<\/span>\n  <a data-text-id=\"4423529471209532389\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_9815906').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_9815906').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_9815906').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_9815906').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_70132">
+    <a href="/book/show/70132.Information_Architecture_for_the_World_Wide_Web"><img alt="Information Architecture for the World Wide Web: Designing Large-Scale Web Sites" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328834902l/70132.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_70132'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/70132.Information_Architecture_for_the_World_Wide_Web?from_choice=false&amp;from_home_module=false\">Information Architecture for the World Wide Web: Designing Large-Scale Web Sites<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/39503.Peter_Morville\">Peter Morville<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.93 avg rating &mdash; 3,758 ratings<\/span>            &mdash; published 1998\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer7423047649564526623\">The post-Ajaxian Web 2.0 world of wikis, folksonomies, and mashups makes well-planned information architecture even more essential. How do you present large volumes of information to people who need to find what they&apos;re looking for quickly? This classic primer shows information architects, designers<\/span>\n  <span id=\"freeText7423047649564526623\" style=\"display:none\">The post-Ajaxian Web 2.0 world of wikis, folksonomies, and mashups makes well-planned information architecture even more essential. How do you present large volumes of information to people who need to find what they\'re looking for quickly? This classic primer shows information architects, designers, and web site developers how to build large-scale and maintainable web sites that are appealing and easy to navigate. \n\nThe new edition is thoroughly updated to address emerging technologies -- with recent examples, new scenarios, and information on best practices -- while maintaining its focus on fundamentals. With topics that range from aesthetics to mechanics, Information Architecture for the World Wide Web explains how to create interfaces that users can understand right away. \n\nInside, you\'ll find:\n\n* An overview of information architecture for both newcomers and experienced practitioners\n* The fundamental components of an architecture, illustrating the interconnected nature of these systems. Updated, with updates for tagging, folksonomies, social classification, and guided navigation\n* Tools, techniques, and methods that take you from research to strategy and design to implementation. This edition discusses blueprints, wireframes and the role of diagrams in the design phase\n* A series of short essays that provide practical tips and philosophical advice for those who work on information architecture\n* The business context of practicing and promoting information architecture, including recent lessons on how to handle enterprise architecture\n* Case studies on the evolution of two large and very different information architectures, illustrating best practices along the way\n* How do you document the rich interfaces of web applications? How do you design for multiple platforms and mobile devices? With emphasis on goals and approaches over tactics or technologies, this enormously popular book gives you knowledge about information architecture with a framework that allows you to learn new approaches -- and unlearn outmoded ones.<\/span>\n  <a data-text-id=\"7423047649564526623\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_70132').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_70132').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_70132').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_70132').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_2998152">
+    <a href="/book/show/2998152-javascript"><img alt="JavaScript: The Good Parts" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328834793l/2998152.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_2998152'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/2998152-javascript?from_choice=false&amp;from_home_module=false\">JavaScript: The Good Parts<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1290380.Douglas_Crockford\">Douglas Crockford<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.23 avg rating &mdash; 8,583 ratings<\/span>            &mdash; published 2008\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer14716053003702476624\">Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that&apos;s more reliable, readable,<\/span>\n  <span id=\"freeText14716053003702476624\" style=\"display:none\">Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that\'s more reliable, readable, and maintainable than the language as a whole—a subset you can use to create truly extensible and efficient code. Considered the JavaScript expert by many people in the development community, author Douglas Crockford identifies the abundance of good ideas that make JavaScript an outstanding object-oriented programming language-ideas such as functions, loose typing, dynamic objects, and an expressive object literal notation. Unfortunately, these good ideas are mixed in with bad and downright awful ideas, like a programming model based on global variables. When Java applets failed, JavaScript became the language of the Web by default, making its popularity almost completely independent of its qualities as a programming language. In JavaScript: The Good Parts , Crockford finally digs through the steaming pile of good intentions and blunders to give you a detailed look at all the genuinely elegant parts of JavaScript, including: The real beauty? As you move ahead with the subset of JavaScript that this book presents, you\'ll also sidestep the need to unlearn all the bad parts. Of course, if you want to find out more about the bad parts and how to use them badly, simply consult any other JavaScript book. With JavaScript: The Good Parts , you\'ll discover a beautiful, elegant, lightweight and highly expressive language that lets you create effective code, whether you\'re managing object libraries or just trying to get Ajax to run fast. If you develop sites or applications for the Web, this book is an absolute must.<\/span>\n  <a data-text-id=\"14716053003702476624\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_2998152').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_2998152').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_2998152').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_2998152').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_6355183">
+    <a href="/book/show/6355183-content-strategy-for-the-web"><img alt="Content Strategy for the Web" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347234003l/6355183.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_6355183'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/6355183-content-strategy-for-the-web?from_choice=false&amp;from_home_module=false\">Content Strategy for the Web<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/513458.Kristina_Halvorson\">Kristina Halvorson<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\" title=\"really liked it\"><span size=\"12x12\" class=\"staticStar p10\">really liked it<\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 4.00 avg rating &mdash; 2,937 ratings<\/span>            &mdash; published 2012\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer1332454445125636974\">If your website content is out of date, off-brand, and out of control, you&apos;re missing a huge opportunity to engage, convert, and retain customers online. Redesigning your home page won&apos;t help. Investing in a new content management system won&apos;t fix it, either. So, where do you start? Without meaningf<\/span>\n  <span id=\"freeText1332454445125636974\" style=\"display:none\">If your website content is out of date, off-brand, and out of control, you\'re missing a huge opportunity to engage, convert, and retain customers online. Redesigning your home page won\'t help. Investing in a new content management system won\'t fix it, either. So, where do you start? Without meaningful content, your website isn\'t worth much to your key audiences. But creating (and caring for) &quot;meaningful&quot; content is far more complicated than we\'re often willing to acknowledge. Content Strategy for the Web explains how to create and deliver useful, usable content for your online audiences, when and where they need it most. It also shares content best practices so you can get your next website redesign right, on time and on budget. For the first time, you\'ll: \nSee content strategy (and its business value) explained in plain language\nFind out why so many web projects implode in the content development phase ... and how to avoid the associated, unnecessary costs and delays\nLearn how to audit and analyze your content\nMake smarter, achievable decisions about which content to create and how\nFind out how to maintain consistent, accurate, compelling content over time\nGet solid, practical advice on staffing for content-related roles and responsibilities &quot;<\/span>\n  <a data-text-id=\"1332454445125636974\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_6355183').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_6355183').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_6355183').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_6355183').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_259072">
+    <a href="/book/show/259072.Designing_With_Web_Standards"><img alt="Designing With Web Standards" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386923470l/259072.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_259072'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/259072.Designing_With_Web_Standards?from_choice=false&amp;from_home_module=false\">Designing With Web Standards<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/151373.Jeffrey_Zeldman\">Jeffrey Zeldman<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.07 avg rating &mdash; 2,100 ratings<\/span>            &mdash; published 2003\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer15642403250035850004\">You code. And code. And code. You build only to rebuild. You focus on making your site compatible with almost every browser or wireless device ever put out there. Then along comes a new device or a new browser, and you start all over again.\n\nYou can get off the merry-go-round.\n\nIt&apos;s time to stop liv<\/span>\n  <span id=\"freeText15642403250035850004\" style=\"display:none\">You code. And code. And code. You build only to rebuild. You focus on making your site compatible with almost every browser or wireless device ever put out there. Then along comes a new device or a new browser, and you start all over again.\n\nYou can get off the merry-go-round.\n\nIt\'s time to stop living in the past and get away from the days of spaghetti code, insanely nested table layouts, tags, and other redundancies that double and triple the bandwidth of even the simplest sites. Instead, it\'s time for forward compatibility.\n\nIsn\'t it high time you started designing with web standards?\n\nStandards aren\'t about leaving users behind or adhering to inflexible rules. Standards are about building sophisticated, beautiful sites that will work as well tomorrow as they do today. You can\'t afford to design tomorrow\'s sites with yesterday\'s piecemeal methods.\n\nJeffrey teaches you to:\n\n- Slash design, development, and quality assurance costs (or do great work in spite of constrained budgets)\n\n- Deliver superb design and sophisticated functionality without worrying about browser incompatibilities\n\n- Set up your site to work as well five years from now as it does today\n\n- Redesign in hours instead of days or weeks\n\n- Welcome new visitors and make your content more visible to search engines\n\n- Stay on the right side of accessibility laws and guidelines\n\n- Support wireless and PDA users without the hassle and expense of multiple versions\n\n- Improve user experience with faster load times and fewer compatibility headaches\n\n- Separate presentation from structure and behavior, facilitating advanced publishing workflows<\/span>\n  <a data-text-id=\"15642403250035850004\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_259072').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_259072').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_259072').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_259072').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_10361330">
+    <a href="/book/show/10361330-html-and-css"><img alt="HTML and CSS: Design and Build Websites" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348805097l/10361330.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_10361330'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/10361330-html-and-css?from_choice=false&amp;from_home_module=false\">HTML and CSS: Design and Build Websites<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/135171.Jon_Duckett\">Jon Duckett<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.31 avg rating &mdash; 4,776 ratings<\/span>            &mdash; published 2011\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer13795060051023017995\">Every day, more and more people want to learn some HTML and CSS. Joining the professional web designers and programmers are new audiences who need to know a little bit of code at work (update a content management system or e-commerce store) and those who want to make their personal blogs more attrac<\/span>\n  <span id=\"freeText13795060051023017995\" style=\"display:none\">Every day, more and more people want to learn some HTML and CSS. Joining the professional web designers and programmers are new audiences who need to know a little bit of code at work (update a content management system or e-commerce store) and those who want to make their personal blogs more attractive. Many books teaching HTML and CSS are dry and only written for those who want to become programmers, which is why this book takes an entirely new approach.\n\n • Introduces HTML and CSS in a way that makes them accessible to everyone—hobbyists, students, and professionals—and it’s full-color throughout\n\n • Utilizes information graphics and lifestyle photography to explain the topics in a simple way that is engaging\n\n • Boasts a unique structure that allows you to progress through the chapters from beginning to end or just dip into topics of particular interest at your leisure\n\nThis educational book is one that you will enjoy picking up, reading, then referring back to. It will make you wish other technical topics were presented in such a simple, attractive and engaging way!<\/span>\n  <a data-text-id=\"13795060051023017995\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_10361330').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_10361330').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_10361330').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_10361330').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_12910749">
+    <a href="/book/show/12910749-mobile-first"><img alt="Mobile First" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1318982714l/12910749.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_12910749'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/12910749-mobile-first?from_choice=false&amp;from_home_module=false\">Mobile First<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/338694.Luke_Wroblewski\">Luke Wroblewski<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.91 avg rating &mdash; 2,101 ratings<\/span>            &mdash; published 2011\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer14100248378865945233\">Our industry’s long wait for the complete, strategic guide to mobile web design is finally over. Former Yahoo! design architect and co-creator of Bagcheck Luke Wroblewski knows more about mobile experience than the rest of us, and packs all he knows into this entertaining, to-the-point guidebook. It<\/span>\n  <span id=\"freeText14100248378865945233\" style=\"display:none\">Our industry’s long wait for the complete, strategic guide to mobile web design is finally over. Former Yahoo! design architect and co-creator of Bagcheck Luke Wroblewski knows more about mobile experience than the rest of us, and packs all he knows into this entertaining, to-the-point guidebook. Its data-driven strategies and battle tested techniques will make you a master of mobile—and improve your non-mobile design, too!<\/span>\n  <a data-text-id=\"14100248378865945233\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_12910749').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_12910749').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_12910749').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_12910749').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_6658783">
+    <a href="/book/show/6658783-rocket-surgery-made-easy"><img alt="Rocket Surgery Made Easy: The Do-It-Yourself Guide to Finding and Fixing Usability Problems" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348663912l/6658783.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_6658783'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/6658783-rocket-surgery-made-easy?from_choice=false&amp;from_home_module=false\">Rocket Surgery Made Easy: The Do-It-Yourself Guide to Finding and Fixing Usability Problems<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/2298.Steve_Krug\">Steve Krug<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.13 avg rating &mdash; 4,296 ratings<\/span>            &mdash; published 2009\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer5381627564387313296\">It&apos;s been known for years that usability testing can dramatically improve products. But with a typical price tag of \$5,000 to \$10,000 for a usability consultant to conduct each round of tests, it rarely happens. In this how-to companion to Don&apos;t Make Me Think: A Common Sense Approach to Web Usabilit<\/span>\n  <span id=\"freeText5381627564387313296\" style=\"display:none\">It\'s been known for years that usability testing can dramatically improve products. But with a typical price tag of \$5,000 to \$10,000 for a usability consultant to conduct each round of tests, it rarely happens. In this how-to companion to Don\'t Make Me Think: A Common Sense Approach to Web Usability, Steve Krug spells out an approach to usability testing that anyone can easily apply to their own web site, application, or other product. (As he said in Don\'t Make Me Think, &quot;It\'s not rocket surgery&quot;.)In this new book, Steve explains how to: \n-Test any design, from a sketch on a napkin to a fully-functioning web site or application\n-Keep your focus on finding the most important problems (because no one has the time or resources to fix them all)\n-Fix the problems that you find, using his &quot;The least you can do&quot; approach\nBy pairing the process of testing and fixing products down to its essentials (A morning a month, that\'s all we ask ), Rocket Surgery makes it realistic for teams to test early and often, catching problems while it\'s still easy to fix them. Rocket Surgery Made Easy adds demonstration videos to the proven mix of clear writing, before-and-after examples, witty illustrations, and practical advice that made Don\'t Make Me Think so popular.<\/span>\n  <a data-text-id=\"5381627564387313296\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_6658783').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_6658783').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_6658783').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_6658783').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_12910715">
+    <a href="/book/show/12910715-designing-for-emotion"><img alt="Designing for Emotion" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1318982331l/12910715.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_12910715'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/12910715-designing-for-emotion?from_choice=false&amp;from_home_module=false\">Designing for Emotion<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1017877.Aaron_Walter\">Aaron Walter<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.96 avg rating &mdash; 2,665 ratings<\/span>            &mdash; published 2011\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer17546836571053041390\">Make your users fall in love with your site via the precepts packed into this brief, charming book by MailChimp user experience design lead Aarron Walter. From classic psychology to case studies, highbrow concepts to common sense, Designing for Emotion demonstrates accessible strategies and memorabl<\/span>\n  <span id=\"freeText17546836571053041390\" style=\"display:none\">Make your users fall in love with your site via the precepts packed into this brief, charming book by MailChimp user experience design lead Aarron Walter. From classic psychology to case studies, highbrow concepts to common sense, Designing for Emotion demonstrates accessible strategies and memorable methods to help you make a human connection through design.<\/span>\n  <a data-text-id=\"17546836571053041390\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_12910715').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_12910715').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_12910715').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_12910715').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="coverRow   ">
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_447648">
+    <a href="/book/show/447648.Getting_Real"><img alt="Getting Real: The Smarter, Faster, Easier Way to Build a Web Application" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643253913l/447648.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_447648'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/447648.Getting_Real?from_choice=false&amp;from_home_module=false\">Getting Real: The Smarter, Faster, Easier Way to Build a Web Application<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/42537.37_Signals\">37 Signals<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.99 avg rating &mdash; 10,642 ratings<\/span>            &mdash; published 2006\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer2501689954475868999\">&quot;Caindo na Real&quot; detalha os princípios de negócios, design, programação e marketing da 37signals. O livro é repleto de insights de simplicidade, pontos de vista contrários e abordagens não convencionais ao design de software. Este não é um livro técnico ou um tutorial de design, é um livro de ideias<\/span>\n  <span id=\"freeText2501689954475868999\" style=\"display:none\">&quot;Caindo na Real&quot; detalha os princípios de negócios, design, programação e marketing da 37signals. O livro é repleto de insights de simplicidade, pontos de vista contrários e abordagens não convencionais ao design de software. Este não é um livro técnico ou um tutorial de design, é um livro de ideias. Qualquer pessoa trabalhando em um aplicativo web - incluindo empreendedores, designers, programadores, executivos ou profissionais de marketing - encontrará valor e inspiração neste livro. A 37signals usou o processo de Cair na Real para lançar várias aplicações web de sucesso (como Basecamp, Campfire, Backpack, Writeboard, Ta-da List) e Ruby on Rails, um framework de aplicação web de código aberto, em apenas dois anos sem financiamento externo, sem dívidas e com apenas 7 pessoas (distribuídas por 7 fusos horários). Mais de 500.000 pessoas ao redor do mundo usam essas aplicações para realizar suas tarefas. Agora você pode descobrir como eles fizeram isso e como você também pode fazer. Não é tão difícil quanto você pensa, se você Cair na Real.<\/span>\n  <a data-text-id=\"2501689954475868999\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_447648').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_447648').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_447648').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_447648').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_148050">
+    <a href="/book/show/148050.JavaScript"><img alt="JavaScript: The Definitive Guide" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347652925l/148050.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_148050'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/148050.JavaScript?from_choice=false&amp;from_home_module=false\">JavaScript: The Definitive Guide<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/85682.David_Flanagan\">David Flanagan<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.09 avg rating &mdash; 3,089 ratings<\/span>            &mdash; published 1996\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer11880029993665491028\">This Fifth Edition is completely revised and expanded to cover JavaScript as it is used in today&apos;s Web 2.0 applications. This book is both an example-driven programmer&apos;s guide and a keep-on-your-desk reference, with new chapters that explain everything you need to know to get the most out of JavaScr<\/span>\n  <span id=\"freeText11880029993665491028\" style=\"display:none\">This Fifth Edition is completely revised and expanded to cover JavaScript as it is used in today\'s Web 2.0 applications. This book is both an example-driven programmer\'s guide and a keep-on-your-desk reference, with new chapters that explain everything you need to know to get the most out of JavaScript, including:\n\n\n\nPart I explains the core JavaScript language in detail. If you are new to JavaScript, it will teach you the language. If you are already a JavaScript programmer, Part I will sharpen your skills and deepen your understanding of the language.\n\nPart II explains the scripting environment provided by web browsers, with a focus on DOM scripting with unobtrusive JavaScript. The broad and deep coverage of client-side JavaScript is illustrated with many sophisticated examples that demonstrate how to:\n\n\n\nPart III is a complete reference for core JavaScript. It documents every class, object, constructor, method, function, property, and constant defined by JavaScript 1.5 and ECMAScript Version 3.\n\nPart IV is a reference for client-side JavaScript, covering legacy web browser APIs, the standard Level 2 DOM API, and emerging standards such as the XMLHttpRequest object and the canvas tag.\n\nMore than 300,000 JavaScript programmers around the world have madethis their indispensable reference book for building JavaScript applications.\n\n&quot;A must-have reference for expert JavaScript programmers...well-organized and detailed.&quot;\n-- Brendan Eich, creator of JavaScript<\/span>\n  <a data-text-id=\"11880029993665491028\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_148050').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_148050').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_148050').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_148050').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_9748697">
+    <a href="/book/show/9748697-css3-for-web-designers"><img alt="CSS3 For Web Designers" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1290436811l/9748697.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_9748697'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/9748697-css3-for-web-designers?from_choice=false&amp;from_home_module=false\">CSS3 For Web Designers<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/349.Dan_Cederholm\">Dan Cederholm<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.05 avg rating &mdash; 1,842 ratings<\/span>            &mdash; published 2010\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer8331456222985596479\">From advanced selectors to generated content to the triumphant return of web fonts, and from gradients, shadows, and rounded corners to full-blown animations, CSS3 is a universe of creative possibilities. No one can better guide you through these galaxies than world-renowned designer, author, and CS<\/span>\n  <span id=\"freeText8331456222985596479\" style=\"display:none\">From advanced selectors to generated content to the triumphant return of web fonts, and from gradients, shadows, and rounded corners to full-blown animations, CSS3 is a universe of creative possibilities. No one can better guide you through these galaxies than world-renowned designer, author, and CSS superstar Dan Cederholm. Learn what works, how it works, and how to work around browsers where it doesn’t work.<\/span>\n  <a data-text-id=\"8331456222985596479\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_9748697').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_9748697').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_9748697').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_9748697').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_9815847">
+    <a href="/book/show/9815847-the-elements-of-content-strategy"><img alt="The Elements of Content Strategy" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1291400563l/9815847.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_9815847'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/9815847-the-elements-of-content-strategy?from_choice=false&amp;from_home_module=false\">The Elements of Content Strategy<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/4490762.Erin_Kissane\">Erin Kissane<\/a><span title=\"Goodreads Author!\">*<\/span>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.73 avg rating &mdash; 1,589 ratings<\/span>            &mdash; published 2011\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer15438046535289959623\">Content strategy is the web’s hottest new thing. But where did it come from? And why does it matter? And what does the content renaissance mean for you? This brief guide explores content strategy’s roots, and quickly and expertly demonstrates not only how it’s done, but how you can do it well. A com<\/span>\n  <span id=\"freeText15438046535289959623\" style=\"display:none\">Content strategy is the web’s hottest new thing. But where did it come from? And why does it matter? And what does the content renaissance mean for you? This brief guide explores content strategy’s roots, and quickly and expertly demonstrates not only how it’s done, but how you can do it well. A compelling read for both experienced content strategists and those making the transition from other fields.<\/span>\n  <a data-text-id=\"15438046535289959623\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_9815847').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_9815847').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_9815847').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_9815847').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+
+
+
+            <div class="leftAlignedImage bookBox">
+              
+<div class="coverWrapper" id="bookCover979459_3296910">
+    <a href="/book/show/3296910-web-form-design"><img alt="Web Form Design: Filling in the Blanks" title="" width="115" class="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328342635l/3296910.jpg"></a>
+</div>
+
+
+  
+
+
+<script>
+//<![CDATA[
+      var newTip = new Tip($('bookCover979459_3296910'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/3296910-web-form-design?from_choice=false&amp;from_home_module=false\">Web Form Design: Filling in the Blanks<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/338694.Luke_Wroblewski\">Luke Wroblewski<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars notranslate\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.04 avg rating &mdash; 2,353 ratings<\/span>            &mdash; published 2008\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer12474542670322883954\">Forms make or break the most crucial online checkout (commerce), registration (community), data input (participation and sharing), and any task requiring information entry. In Web Form Design, Luke Wroblewski draws on original research, his considerable experience at Yahoo! and eBay, and the perspec<\/span>\n  <span id=\"freeText12474542670322883954\" style=\"display:none\">Forms make or break the most crucial online checkout (commerce), registration (community), data input (participation and sharing), and any task requiring information entry. In Web Form Design, Luke Wroblewski draws on original research, his considerable experience at Yahoo! and eBay, and the perspectives of many of the field\'s leading designers to show you everything you need to know about designing effective and engaging Web forms.<\/span>\n  <a data-text-id=\"12474542670322883954\" href=\"#\" onclick=\"swapContent(\$(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n\n", { style: 'addbook', stem: 'rightMiddle', hook: { tip: 'rightMiddle', target: 'leftMiddle' }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
+      $('bookCover979459_3296910').observe('prototip:shown', function() {
+        if (this.up('#box')) {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
+        } else {
+          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
+        }
+      });
+
+      newTip['wrapper'].addClassName('prototipAllowOverflow');
+
+        $('bookCover979459_3296910').observe('prototip:shown', function () {
+          $$('div.prototip').each(function (e) {
+            if ($('bookCover979459_3296910').hasClassName('ignored')) {
+              e.setStyle({'display': 'none'});
+              return;
+            }
+            e.setStyle({'overflow': 'visible'});
+          });
+        });
+      $('bookCover979459_3296910').observe('prototip:hidden', function () {
+        $$('span.elementTwo').each(function (e) {
+          if (e.getStyle('display') !== 'none') {
+            var lessLink = e.next();
+            swapContent(lessLink);
+          }
+        });
+      });
+
+//]]>
+</script>
+
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+
+  <div class="clear"></div>
+  <div class="moreLink">
+      <a class="actionLink" href="/shelf/show/web">More web books...</a>
+  </div>
+
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+
+
+    <div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/list/show_tag/web">Lists</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+        <div class="listRowsFull">
+    <div class="row" id="topRow">
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/91662.Telecommunications_Non_Fiction_"><img alt="The STREAM TONE by T. Gilling" title="The STREAM TONE by T. Gilling" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440404004l/26043127._SX98_.jpg"></a><a href="/list/show/91662.Telecommunications_Non_Fiction_"><img alt="From GSM to Lte-Advanced Pro and 5g by Martin Sauter" title="From GSM to Lte-Advanced Pro and 5g by Martin Sauter" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502688612l/35035028._SX98_.jpg"></a><a href="/list/show/91662.Telecommunications_Non_Fiction_"><img alt="5G Physical Layer by Ali Zaidi" title="5G Physical Layer by Ali Zaidi" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518356429l/38237014._SX98_.jpg"></a><a href="/list/show/91662.Telecommunications_Non_Fiction_"><img alt="IPv6 Deployment and Management by Michael Dooley" title="IPv6 Deployment and Management by Michael Dooley" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361744686l/16219660._SX98_.jpg"></a><a href="/list/show/91662.Telecommunications_Non_Fiction_"><img alt="The Future of the Internet--And How to Stop It by Jonathan L. Zittrain" title="The Future of the Internet--And How to Stop It by Jonathan L. Zittrain" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328826884l/6358448._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/91662.Telecommunications_Non_Fiction_">Telecommunications (Non-Fiction)</a><br>
+<div class="listFullDetails">
+    46 books
+    —
+    10 voters
+
+
+
+</div>
+
+          </div>
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb"><img alt="Qr Codes Kill Kittens by Scott Stratten" title="Qr Codes Kill Kittens by Scott Stratten" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1372045121l/17765037._SX98_.jpg"></a><a href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb"><img alt="Don't Make Me Think by Steve Krug" title="Don't Make Me Think by Steve Krug" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390867006l/3368._SX98_.jpg"></a><a href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb"><img alt="Lean In by Sheryl Sandberg" title="Lean In by Sheryl Sandberg" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630483761l/16071764._SX98_.jpg"></a><a href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb"><img alt="Leadership by Carlos    Rivera" title="Leadership by Carlos    Rivera" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394077744l/21058784._SX98_.jpg"></a><a href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb"><img alt="Just Back Off and Let Us Teach by Caroline Alexander Lewis" title="Just Back Off and Let Us Teach by Caroline Alexander Lewis" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431443310l/25163294._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/44401.Higher_Education_Books_Recommended_from_heweb">Higher Education Books Recommended from #heweb</a><br>
+<div class="listFullDetails">
+    33 books
+    —
+    29 voters
+
+
+
+</div>
+
+          </div>
+            <br class="clear">
+        </div>
+        <div class="row">
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/91659.The_Internet_Non_Fiction_"><img alt="The STREAM TONE by T. Gilling" title="The STREAM TONE by T. Gilling" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440404004l/26043127._SX98_.jpg"></a><a href="/list/show/91659.The_Internet_Non_Fiction_"><img alt="Tubes by Andrew  Blum" title="Tubes by Andrew  Blum" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356058075l/16240738._SX98_.jpg"></a><a href="/list/show/91659.The_Internet_Non_Fiction_"><img alt="So You Want to Vlog? by Andrea   Valeria" title="So You Want to Vlog? by Andrea   Valeria" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516822605l/38195688._SX98_.jpg"></a><a href="/list/show/91659.The_Internet_Non_Fiction_"><img alt="Digicrimination – Those are the Good Times by H.Okan Tansu" title="Digicrimination – Those are the Good Times by H.Okan Tansu" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1530978417l/40739596._SX98_.jpg"></a><a href="/list/show/91659.The_Internet_Non_Fiction_"><img alt="How the Internet Works by Preston Gralla" title="How the Internet Works by Preston Gralla" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442162006l/580909._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/91659.The_Internet_Non_Fiction_">The Internet (Non-Fiction)</a><br>
+<div class="listFullDetails">
+    27 books
+    —
+    20 voters
+
+
+
+</div>
+
+          </div>
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/111092.Breaking_Brown_Book_Reads"><img alt="The Color of Law by Richard Rothstein" title="The Color of Law by Richard Rothstein" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493422076l/32191706._SX98_.jpg"></a><a href="/list/show/111092.Breaking_Brown_Book_Reads"><img alt="The New Jim Crow by Michelle Alexander" title="The New Jim Crow by Michelle Alexander" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328751532l/6792458._SX98_.jpg"></a><a href="/list/show/111092.Breaking_Brown_Book_Reads"><img alt="The Immortal Life of Henrietta Lacks by Rebecca Skloot" title="The Immortal Life of Henrietta Lacks by Rebecca Skloot" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327878144l/6493208._SX98_.jpg"></a><a href="/list/show/111092.Breaking_Brown_Book_Reads"><img alt="Medical Apartheid by Harriet A. Washington" title="Medical Apartheid by Harriet A. Washington" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387667004l/114192._SX98_.jpg"></a><a href="/list/show/111092.Breaking_Brown_Book_Reads"><img alt="When Affirmative Action Was White by Ira Katznelson" title="When Affirmative Action Was White by Ira Katznelson" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348870472l/88367._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/111092.Breaking_Brown_Book_Reads">Breaking Brown Book Reads</a><br>
+<div class="listFullDetails">
+    95 books
+    —
+    57 voters
+
+
+
+</div>
+
+          </div>
+            <br class="clear">
+        </div>
+        <div class="row">
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas"><img alt="Ler e compreender by Ingedore Villaça Koch" title="Ler e compreender by Ingedore Villaça Koch" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1462582440l/21839357._SX98_.jpg"></a><a href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas"><img alt="Lições de texto by Francisco Platão Savioli" title="Lições de texto by Francisco Platão Savioli" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1448776540l/28006611._SX98_.jpg"></a><a href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas"><img alt="Oficina de Texto by Carlos Alberto Faraco" title="Oficina de Texto by Carlos Alberto Faraco" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463947904l/30253029._SX98_.jpg"></a><a href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas"><img alt="Novas Tecnologias e Mediação Pedagógica by José M. Moran" title="Novas Tecnologias e Mediação Pedagógica by José M. Moran" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389633211l/20526185._SX98_.jpg"></a><a href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas"><img alt="Logicomix by Apostolos Doxiadis" title="Logicomix by Apostolos Doxiadis" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1312031956l/6493321._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/99431.Inform_tica_para_Internet_Fontes_recomendadas">Informática para Internet - Fontes recomendadas</a><br>
+<div class="listFullDetails">
+    8 books
+    —
+    1 voter
+
+
+
+</div>
+
+          </div>
+          <div class="cell">
+            
+<div class="listImgs">
+  <a href="/list/show/91996.The_Digital_Divide_Non_Fiction_"><img alt="The Digital Divide by Mark Bauerlein" title="The Digital Divide by Mark Bauerlein" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348934352l/11756380._SX98_.jpg"></a><a href="/list/show/91996.The_Digital_Divide_Non_Fiction_"><img alt="The Art of Deception by Kevin D. Mitnick" title="The Art of Deception by Kevin D. Mitnick" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385273509l/18160._SX98_.jpg"></a><a href="/list/show/91996.The_Digital_Divide_Non_Fiction_"><img alt="Digital Disconnect by Robert W. McChesney" title="Digital Disconnect by Robert W. McChesney" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408469821l/20893709._SX98_.jpg"></a><a href="/list/show/91996.The_Digital_Divide_Non_Fiction_"><img alt="Digital Divides by Kim J Andreasson" title="Digital Divides by Kim J Andreasson" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411336116l/23082641._SX98_.jpg"></a><a href="/list/show/91996.The_Digital_Divide_Non_Fiction_"><img alt="Technology and Social Inclusion by Mark Warschauer" title="Technology and Social Inclusion by Mark Warschauer" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347608366l/947072._SX98_.jpg"></a>
+</div>
+<a class="listTitle" href="/list/show/91996.The_Digital_Divide_Non_Fiction_">The Digital Divide (Non-Fiction)</a><br>
+<div class="listFullDetails">
+    58 books
+    —
+    2 voters
+
+
+
+</div>
+
+          </div>
+    </div>
+  </div>
+<br class="clear">
+
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+</div>
+
+<div class="rightContainer">
+
+  <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--mediumRectangle&quot;}"><noscript data-reactid=".1"></noscript></div>
+
+
+
+    <div data-react-class="ReactComponents.GoogleFeaturedContentModule" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;trackingOptions&quot;:{&quot;enableTracking&quot;:true,&quot;adId&quot;:&quot;&quot;},&quot;isMobile&quot;:false,&quot;isInline&quot;:false,&quot;hasBottomBorder&quot;:false}"><noscript data-reactid=".2"></noscript></div>
+
+    <br>
+    <div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground">Related Genres</h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+            <a class="gr-hyperlink" href="/genres/computers">Computers</a><br>
+      <a class="gr-hyperlink" href="/genres/internet">Internet</a><br>
+
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+  <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--mediumRectangle&quot;}"><noscript data-reactid=".3"></noscript></div>
+
+    <div class="voice">
+    
+    <div style="width: 310px">
+      <div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/news">Featured News &amp; Interviews</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+        
+  <div class="u-marginBottomXSmall">
+
+      <div class="image">
+<a href="/blog/show/2751-readers-most-anticipated-summer-books"><img alt="Readers' Most Anticipated Summer Books" width="100%" src="https://images.gr-assets.com/blogs/1714674690p8/2751.jpg"></a>
+</div>
+<a class="bigText title" href="/blog/show/2751-readers-most-anticipated-summer-books">Readers' Most Anticipated Summer Books</a>
+<div class="links">
+<div class="left">
+</div>
+<div class="action right">
+<a class="actionLinkLite" href="/blog/show/2751-readers-most-anticipated-summer-books">Read »</a>
+</div>
+</div>
+
+      <br class="clear">
+      <div style="border:1px solid grey;"></div>
+
+      <div class="clear"></div>
+  </div>
+
+          <a class="actionLink right" href="/news">More articles…</a>
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>    </div>
+
+    </div>
+  
+    <!-- romance gets treated differently to improve SEO -->
+    <div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/quotes/show_tag?name=web">Quotes Tagged “Web”</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+    		<div class="quote mediumText ">
+  <div class="quoteDetails fullLine">
+        <a class="leftAlignedImage quoteAvatar " href="/author/show/138207.Deepak_Chopra">
+      <img alt="Deepak Chopra" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/authors/1400537940i/138207._UX200_CR0,15,200,200_.jpg">
+</a>
+<div class="quoteText">
+
+        “
+<span id="freeTextContainer326049792946803000">Each of us is a unique strand in the intricate web of life and here to make a contribution.</span>
+”
+    <br>
+  ―
+  <span class="authorOrTitle">
+    Deepak Chopra
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/381644-each-of-us-is-a-unique-strand-in-the-intricate">140 likes</a>
+   </div>
+</div>
+
+  </div>
+  <br class="clear">
+</div>
+
+	<div class="quote mediumText last">
+  <div class="quoteDetails fullLine">
+        <a class="leftAlignedImage quoteAvatar " href="/author/show/428754.Tim_Berners_Lee">
+      <img alt="Tim Berners-Lee" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/authors/1397656730i/428754._UX200_CR0,51,200,200_.jpg">
+</a>
+<div class="quoteText">
+
+        “
+<span id="freeTextContainer1540003091668214160">The spirit there was very decentralized. The individual was incredibly empowered. It was all based on there being no central authority that you had to go to to ask permission. That feeling of individual control, that empowerment, is something we’ve lost.</span>
+”
+    <br>
+  ―
+  <span class="authorOrTitle">
+    Tim Berners-Lee
+  </span>
+</div>
+
+
+<div class="quoteFooter">
+   <div class="right">
+     <a class="smallText" title="View this quote" href="/quotes/11814188-the-spirit-there-was-very-decentralized-the-individual-was-incredibly">0 likes</a>
+   </div>
+</div>
+
+  </div>
+  <br class="clear">
+</div>
+
+
+        <a class="actionLink" style="float: right" href="/quotes/show_tag?name=web">More quotes...</a>
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+
+    <div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/videos/show_tag?name=web">Videos Tagged “Web”</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent">
+      <div class="elementList" style="width: 100%">
+        <div style="float: left; padding-right: 10px">
+          <div class="videoThumbnail" data-source="youtube" data-source-id="rCsWu0UQTCM" data-goodreads-id="26358"><a href="/videos/26358-my-webcast-interview-with-ross-k-very-fun-an-ending-even-i-couldn-t"><img alt="My Webcast Interview With Ross K – Very Fun &amp; An Ending Even I Couldn’t Have Predicted!" src="https://i.ytimg.com/vi/rCsWu0UQTCM/default.jpg"></a><a class="playIcon" href="/videos/26358-my-webcast-interview-with-ross-k-very-fun-an-ending-even-i-couldn-t"></a></div>
+        </div>
+        <a class="videoTitle" href="/videos/26358-my-webcast-interview-with-ross-k-very-fun-an-ending-even-i-couldn-t">My Webcast Interview With Ross K – Very Fun &amp; An Ending Even I Couldn’t Have Predicted!</a>
+        <br class="clear">
+      </div>
+      <div class="elementList" style="width: 100%">
+        <div style="float: left; padding-right: 10px">
+          <div class="videoThumbnail" data-source="youtube" data-source-id="HB_EHb7D5f4" data-goodreads-id="14700"><a href="/videos/14700-the-secret-to-writing-in-the-internet-age"><img alt="The Secret to Writing in the Internet Age" src="https://i.ytimg.com/vi/HB_EHb7D5f4/default.jpg"></a><a class="playIcon" href="/videos/14700-the-secret-to-writing-in-the-internet-age"></a></div>
+        </div>
+        <a class="videoTitle" href="/videos/14700-the-secret-to-writing-in-the-internet-age">The Secret to Writing in the Internet Age</a>
+        <br class="clear">
+      </div>
+      <a class="actionLink" style="float: right" href="/videos/show_tag?name=web">More videos...</a>
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+  <div data-react-class="ReactComponents.GoogleBannerAd" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;className&quot;:&quot;googleBannerAd--mediumRectangle&quot;}"><noscript data-reactid=".4"></noscript></div>
+
+        	
+<div class=" clearFloats bigBox"><div class="h2Container gradientHeaderContainer"><h2 class="brownBackground"><a href="/group/show_tag/web?name=web">Groups Tagged "Web"</a></h2></div><div class="bigBoxBody"><div class="bigBoxContent containerWithHeaderContent" id="<ahref=&quot;/group/show_tag/web?name=web&quot;>GroupsTagged&amp;quot;Web&amp;quot;</a>">
+      <div class="smallListEntry">
+  <div>
+    <a class="groupName header14 serif" href="/group/show/96542-guelph-web-maker-meetup">Guelph Web Maker Meetup</a>
+  </div>
+
+    
+    Guelph Web Maker Meetup Book Library, Reviews and Discussion
+    <div class="floatingBox" id="freeTextgroup__96542" style="display: none; width: 450px; padding: 20px 40px 20px 40px">
+      <a class=" closeLink" href="#" onclick="$j('#freeTextgroup__96542').toggle(); return false;">[close]</a>
+      Guelph Web Maker Meetup Book Library, Reviews and Discussion
+    </div>
+
+    <div class="greyText statistics">
+      2 members,
+      last active 11 years ago
+    </div>
+</div>
+
+      <div class="smallListEntry">
+  <div>
+    <a class="groupName header14 serif" href="/group/show/36578-web-design-development-book-club">Web Design &amp; Development Book Club</a>
+  </div>
+
+    
+    Enjoy reading about web design and development? Share your latest reads here at the Web Design B<a id="freeTextLinkgroup__36578" href="#" onclick="$j('#freeTextgroup__36578').toggle(); return false;">…more</a>
+    <div class="floatingBox" id="freeTextgroup__36578" style="display: none; width: 450px; padding: 20px 40px 20px 40px">
+      <a class=" closeLink" href="#" onclick="$j('#freeTextgroup__36578').toggle(); return false;">[close]</a>
+      Enjoy reading about web design and development? Share your latest reads here at the Web Design Book Club!
+    </div>
+
+    <div class="greyText statistics">
+      31 members,
+      last active 13 years ago
+    </div>
+</div>
+
+      <div class="smallListEntry">
+  <div>
+    <a class="groupName header14 serif" href="/group/show/72636-webcomic-wonderland">Webcomic Wonderland</a>
+  </div>
+    <a title="Webcomic Wonderland" class="leftAlignedImage smallListImage" href="/group/show/72636-webcomic-wonderland"><img width="30" alt="Webcomic Wonderland" src="https://images.gr-assets.com/groups/1450365485p2/72636.jpg"></a>
+
+    
+    This is a group for anyone who reads webcomics or would like to start. Here you can discuss all <a id="freeTextLinkgroup__72636" href="#" onclick="$j('#freeTextgroup__72636').toggle(); return false;">…more</a>
+    <div class="floatingBox" id="freeTextgroup__72636" style="display: none; width: 450px; padding: 20px 40px 20px 40px">
+      <a class=" closeLink" href="#" onclick="$j('#freeTextgroup__72636').toggle(); return false;">[close]</a>
+      This is a group for anyone who reads webcomics or would like to start. Here you can discuss all of your favorite webcomics, take polls, play games and participate in the webcomic book club! This month we are reading Vattu!
+
+Group Masthead created by Ben Carlsen
+Group Photo copyright Evan Dahm.
+    </div>
+
+    <div class="greyText statistics">
+      388 members,
+      last active 2 days ago
+    </div>
+</div>
+
+      <div class="smallListEntry">
+  <div>
+    <a class="groupName header14 serif" href="/group/show/76380-zombie-web-projekt">Zombie Web Projekt</a>
+  </div>
+    <a title="Zombie Web Projekt" class="leftAlignedImage smallListImage" href="/group/show/76380-zombie-web-projekt"><img width="30" alt="Zombie Web Projekt" src="https://images.gr-assets.com/groups/1346176501p2/76380.jpg"></a>
+
+    
+    Zusammenkunft der Teilnehmer des Schreibprojekts. Die hier geschriebenen Geschichten werden spät<a id="freeTextLinkgroup__76380" href="#" onclick="$j('#freeTextgroup__76380').toggle(); return false;">…more</a>
+    <div class="floatingBox" id="freeTextgroup__76380" style="display: none; width: 450px; padding: 20px 40px 20px 40px">
+      <a class=" closeLink" href="#" onclick="$j('#freeTextgroup__76380').toggle(); return false;">[close]</a>
+      Zusammenkunft der Teilnehmer des Schreibprojekts. Die hier geschriebenen Geschichten werden später kostenfrei auf einem Blog veröffentlicht.
+    </div>
+
+    <div class="greyText statistics">
+      14 members,
+      last active 11 years ago
+    </div>
+</div>
+
+    <div>
+        <a class="actionLink listMoreLink" href="/group/show_tag/web?name=web">More…</a>
+    </div>
+<div class="clear"></div></div></div><div class="bigBoxBottom"></div></div>
+
+</div>
+
+
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div data-react-class="ReactComponents.GooglePageSkin" data-react-props="{&quot;adId&quot;:&quot;&quot;,&quot;trackingOptions&quot;:{&quot;enableTracking&quot;:true,&quot;adId&quot;:&quot;&quot;}}"><noscript data-reactid=".5"></noscript></div>
+
+
+  <div class="clear"></div>
+    <footer class="responsiveSiteFooter">
+<div class="responsiveSiteFooter__contents gr-container-fluid">
+<div class="gr-row">
+<div class="gr-col gr-col-md-8 gr-col-lg-6">
+<div class="gr-row">
+<div class="gr-col-md-3 gr-col-lg-4">
+<h3 class="responsiveSiteFooter__heading">Company</h3>
+<ul class="responsiveSiteFooter__linkList">
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/about/us">About us</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/jobs">Careers</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/about/terms">Terms</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/about/privacy">Privacy</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="https://help.goodreads.com/s/article/Goodreads-Interest-Based-Ads-Notice">Interest Based Ads</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/adprefs">Ad Preferences</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/help?action_type=help_web_footer">Help</a>
+</li>
+</ul>
+</div>
+<div class="gr-col-md-4 gr-col-lg-4">
+<h3 class="responsiveSiteFooter__heading">Work with us</h3>
+<ul class="responsiveSiteFooter__linkList">
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/author/program">Authors</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/advertisers">Advertise</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/news?content_type=author_blogs">Authors &amp; ads blog</a>
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/api">API</a>
+</li>
+</ul>
+</div>
+<div class="gr-col-md-5 gr-col-lg-4">
+<h3 class="responsiveSiteFooter__heading">Connect</h3>
+<div class="responsiveSiteFooter__socialLinkWrapper">
+<a class="responsiveSiteFooter__socialLink" rel="noopener noreferrer" href="https://www.facebook.com/Goodreads/"><img alt="Goodreads on Facebook" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
+</a><a class="responsiveSiteFooter__socialLink" rel="noopener noreferrer" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
+</a></div>
+<div class="responsiveSiteFooter__socialLinkWrapper">
+<a class="responsiveSiteFooter__socialLink" rel="noopener noreferrer" href="https://www.instagram.com/goodreads/"><img alt="Goodreads on Instagram" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
+</a><a class="responsiveSiteFooter__socialLink" rel="noopener noreferrer" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
+</a></div>
+</div>
+</div>
+</div>
+<div class="gr-col gr-col-md-4 gr-col-lg-6 responsiveSiteFooter__appLinksColumn">
+<div class="responsiveSiteFooter__appLinksColumnContents">
+<div class="responsiveSiteFooter__appLinksColumnBadges">
+<a href="https://itunes.apple.com/app/apple-store/id355833469?pt=325668&amp;ct=mw_footer&amp;mt=8"><img alt="Download app for iOS" src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg">
+</a><a href="https://play.google.com/store/apps/details?id=com.goodreads&amp;utm_source=mw_footer&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Download app for Android" srcset="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x" src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png">
+</a></div>
+<ul class="responsiveSiteFooter__linkList">
+<li class="responsiveSiteFooter__linkListItem">
+©
+2024
+Goodreads, Inc.
+</li>
+<li class="responsiveSiteFooter__linkListItem">
+<a class="responsiveSiteFooter__link" href="/toggle_mobile">Mobile version
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+  
+
+    <script>
+//<![CDATA[
+if (typeof window.uet == 'function') { window.uet('be'); }
+//]]>
+</script>
+
+</div>
+  <!--
+This partial loads on almost every page view.  The associated React component makes
+a call to SignInPromptController#get to determine if the user should see the sign in interstial.
+This is determined by how many signed out pagehits the user has executed an how recently they have
+last seen the insterstitial.  If the controller responds indicating the popup should appear, the
+React component will render its content.
+-->
+<div data-react-class="ReactComponents.LoginInterstitial" data-react-props="{&quot;allowFacebookSignIn&quot;:true,&quot;allowAmazonSignIn&quot;:true,&quot;overrideSignedOutPageCount&quot;:false,&quot;path&quot;:{&quot;signInUrl&quot;:&quot;/user/sign_in&quot;,&quot;signUpUrl&quot;:&quot;/user/sign_up&quot;,&quot;privacyUrl&quot;:&quot;/about/privacy&quot;,&quot;termsUrl&quot;:&quot;/about/terms&quot;,&quot;thirdPartyRedirectUrl&quot;:&quot;/user/new?connect_prompt=true&quot;}}"><noscript data-reactid=".29l7ldyaswq" data-react-checksum="-1171320435"></noscript></div>
+
+
+<div id="overlay" style="display:none" onclick="Lightbox.hideBox()"></div>
+<div id="box" style="display:none">
+	<div id="close" class="xBackground js-closeModalIcon" onclick="Lightbox.hideBox()" title="Close this window"></div>
+	<div id="boxContents"></div>
+	<div id="boxContentsLeftovers" style="display:none"></div>
+	<div class="clear"></div>
+</div>
+
+<!-- <div id="fbSigninNotification" style="display:none;">
+  <p>Welcome back. Just a moment while we sign you in to your Goodreads account.</p>
+  <img src="https://s.gr-assets.com/assets/facebook/login_animation-085464711e6c1ed5ba287a2f40ba3343.gif" alt="Login animation" />
+</div> -->
+
+
+
+
+<script>
+  //<![CDATA[
+    qcdata = {} || qcdata;
+      (function(){
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-0dUe_kJAjvkoY";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem,scpt);
+      }());
+    var qcdata = {qacct: 'p-0dUe_kJAjvkoY'};
+  //]]>
+</script>
+<!-- <noscript>
+<img alt='Quantcast' border='0' height='1' src='//pixel.quantserve.com/pixel/p-0dUe_kJAjvkoY.gif' style='display: none;' width='1'>
+</noscript> -->
+
+<script>
+  //<![CDATA[
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6035830", c3: "", c4: "", c5: "", c6: "", c15: ""});
+    (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+    })();
+  //]]>
+</script>
+<noscript>
+<img style="display: none" width="0" height="0" alt="" src="https://sb.scorecardresearch.com/p?c1=2&amp;amp;c2=6035830&amp;amp;c3=&amp;amp;c4=&amp;amp;c5=&amp;amp;c6=&amp;amp;c15=&amp;amp;cv=2.0&amp;amp;cj=1" />
+</noscript>
+
+
+<script>
+  //<![CDATA[
+    window.addEventListener("DOMContentLoaded", function() {
+      ReactStores.GoogleAdsStore.initializeWith({"targeting":{"sid":"osid.faa91d3a07e5ef28561d527e8d5dddbc","grsession":"osid.faa91d3a07e5ef28561d527e8d5dddbc","surface":"desktop","signedin":"false","gr_author":"false","author":[],"shelf":["web"],"tags":["4076"],"gtargeting":"1","resource":"genre_web"},"ads":{},"nativeAds":{}});  ReactStores.NotificationsStore.updateWith({});
+      ReactStores.CurrentUserStore.initializeWith({"currentUser":null});
+      ReactStores.FavoriteGenresStore.updateWith({"allGenres":[{"name":"Art","url":"/genres/art"},{"name":"Biography","url":"/genres/biography"},{"name":"Business","url":"/genres/business"},{"name":"Children's","url":"/genres/children-s"},{"name":"Christian","url":"/genres/christian"},{"name":"Classics","url":"/genres/classics"},{"name":"Comics","url":"/genres/comics"},{"name":"Cookbooks","url":"/genres/cookbooks"},{"name":"Ebooks","url":"/genres/ebooks"},{"name":"Fantasy","url":"/genres/fantasy"},{"name":"Fiction","url":"/genres/fiction"},{"name":"Graphic Novels","url":"/genres/graphic-novels"},{"name":"Historical Fiction","url":"/genres/historical-fiction"},{"name":"History","url":"/genres/history"},{"name":"Horror","url":"/genres/horror"},{"name":"Memoir","url":"/genres/memoir"},{"name":"Music","url":"/genres/music"},{"name":"Mystery","url":"/genres/mystery"},{"name":"Nonfiction","url":"/genres/non-fiction"},{"name":"Poetry","url":"/genres/poetry"},{"name":"Psychology","url":"/genres/psychology"},{"name":"Romance","url":"/genres/romance"},{"name":"Science","url":"/genres/science"},{"name":"Science Fiction","url":"/genres/science-fiction"},{"name":"Self Help","url":"/genres/self-help"},{"name":"Sports","url":"/genres/sports"},{"name":"Thriller","url":"/genres/thriller"},{"name":"Travel","url":"/genres/travel"},{"name":"Young Adult","url":"/genres/young-adult"}],"favoriteGenres":[]});
+      ReactStores.TabsStore.updateWith({"communitySpotlight":"groups"});
+    
+    });
+  //]]>
+</script>
+
+
+
+
+
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe><div class="prototip prototipAllowOverflow" style="z-index: 6001; height: auto; visibility: visible; width: 423px; display: none; left: 538px; top: 465.5px; overflow: visible;"><div class="prototip_Stem" style="height: 15px; left: 0px; top: 50%; margin-top: -7.5px;"><div class="prototip_StemImage" style="height: 15px; width: 11px; background: url(&quot;//s.gr-assets.com/assets/prototip/styles/addbook/leftmiddle.png&quot;) left top no-repeat; float: left;"></div></div><div class="prototip_StemWrapper clearfix" style="left: 11px;"><div class="prototip_StemBox clearfix"><ul class="borderFrame" style="width: 412px;"><li class="borderTop borderRow" style="height: 6px;"><div class="prototip_CornerWrapper prototip_CornerWrapperTopLeft"><div class="prototip_Corner prototip_CornerTl" style="width: 6px; height: 6px;"><canvas class="cornerCanvasTl" width="6px" height="6px"></canvas></div></div><div class="prototip_BetweenCorners" style="height: 6px;"><div class="prototip_Between" style="margin: 0px 6px; height: 6px; background-color: rgb(215, 210, 196);"></div></div><div class="prototip_CornerWrapper prototip_CornerWrapperTopRight"><div class="prototip_Corner prototip_CornerTr" style="width: 6px; height: 6px;"><canvas class="cornerCanvasTr" width="6px" height="6px"></canvas></div></div></li><li class="borderMiddle borderRow" style="background-color: rgb(215, 210, 196);"><div class="borderCenter" style="padding: 0px 6px;"><div class="tooltip addbook" style="width: 400px;"><div class="toolbar" style="display: none;"><div class="title" style="display: none;"></div></div><div class="content clearfix">
+
+  <h2><a class="readable bookTitle" href="https://www.goodreads.com/book/show/78786087-oathbound-healer?from_choice=false&amp;from_home_module=false">Oathbound Healer (Beneath the Dragoneye Moons, #1)</a></h2>
+
+      <div>
+        by <a class="authorName" href="/author/show/20890132.Selkie_Myth">Selkie Myth</a><span title="Goodreads Author!">*</span>
+      </div>
+
+          <div class="smallText uitext darkGreyText">
+            <span class="minirating"><span class="stars staticStars notranslate"><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p3"></span></span> 4.31 avg rating — 2,377 ratings</span>            — published 2020
+          </div>
+
+    <div class="addBookTipDescription">
+      
+<span id="freeTextContainer939252949713170432">Elaine is ripped from this world to Pallos, a land of unlimited possibilities made real by a grand System governing classes, skills, and magic.
+
+An ideal society? What is this, a fantasy novel?
+
+Adventures? Right this way!
+
+A Grand quest? Nah.
+
+Friends and loot? Heck yes!
+
+Humans are the top dog? No</span>
+  <span id="freeText939252949713170432" style="display:none">Elaine is ripped from this world to Pallos, a land of unlimited possibilities made real by a grand System governing classes, skills, and magic.
+
+An ideal society? What is this, a fantasy novel?
+
+Adventures? Right this way!
+
+A Grand quest? Nah.
+
+Friends and loot? Heck yes!
+
+Humans are the top dog? Nope, dinosaur food.
+
+Healing and fighting? Well, everything is trying to eat her.
+
+Join Elaine as she travels around Pallos, discovering all the wonders and mysteries of the world, trying to find a place where she belongs, hunting those elusive mangos, all while the ominous Dragoneye Moons watch her every move.</span>
+  <a data-text-id="939252949713170432" href="#" onclick="swapContent($(this));; return false;">...more</a>
+
+    </div>
+
+
+</div></div></div></li><li class="borderBottom borderRow" style="height: 6px;"><div class="prototip_CornerWrapper prototip_CornerWrapperBottomLeft"><div class="prototip_Corner prototip_CornerBl" style="width: 6px; height: 6px;"><canvas class="cornerCanvasBl" width="6px" height="6px"></canvas></div></div><div class="prototip_BetweenCorners" style="height: 6px;"><div class="prototip_Between" style="margin: 0px 6px; height: 6px; background-color: rgb(215, 210, 196);"></div></div><div class="prototip_CornerWrapper prototip_CornerWrapperBottomRight"><div class="prototip_Corner prototip_CornerBr" style="width: 6px; height: 6px;"><canvas class="cornerCanvasBr" width="6px" height="6px"></canvas></div></div></li></ul></div></div></div><div class="prototip prototipAllowOverflow" style="z-index: 6000; height: auto; visibility: visible; width: 423px; left: 663px; top: 465.5px; overflow: visible; display: none;"><div class="prototip_Stem" style="height: 15px; left: 0px; top: 50%; margin-top: -7.5px;"><div class="prototip_StemImage" style="height: 15px; width: 11px; background: url(&quot;//s.gr-assets.com/assets/prototip/styles/addbook/leftmiddle.png&quot;) left top no-repeat; float: left;"></div></div><div class="prototip_StemWrapper clearfix" style="left: 11px;"><div class="prototip_StemBox clearfix"><ul class="borderFrame" style="width: 412px;"><li class="borderTop borderRow" style="height: 6px;"><div class="prototip_CornerWrapper prototip_CornerWrapperTopLeft"><div class="prototip_Corner prototip_CornerTl" style="width: 6px; height: 6px;"><canvas class="cornerCanvasTl" width="6px" height="6px"></canvas></div></div><div class="prototip_BetweenCorners" style="height: 6px;"><div class="prototip_Between" style="margin: 0px 6px; height: 6px; background-color: rgb(215, 210, 196);"></div></div><div class="prototip_CornerWrapper prototip_CornerWrapperTopRight"><div class="prototip_Corner prototip_CornerTr" style="width: 6px; height: 6px;"><canvas class="cornerCanvasTr" width="6px" height="6px"></canvas></div></div></li><li class="borderMiddle borderRow" style="background-color: rgb(215, 210, 196);"><div class="borderCenter" style="padding: 0px 6px;"><div class="tooltip addbook" style="width: 400px;"><div class="toolbar" style="display: none;"><div class="title" style="display: none;"></div></div><div class="content clearfix">
+
+  <h2><a class="readable bookTitle" href="https://www.goodreads.com/book/show/78787060-adventures-in-the-argo?from_choice=false&amp;from_home_module=false">Adventures in the Argo (Beneath the Dragoneye Moons, #2)</a></h2>
+
+      <div>
+        by <a class="authorName" href="/author/show/20890132.Selkie_Myth">Selkie Myth</a><span title="Goodreads Author!">*</span>
+      </div>
+
+          <div class="smallText uitext darkGreyText">
+            <span class="minirating"><span class="stars staticStars notranslate"><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p10"></span><span size="12x12" class="staticStar p3"></span></span> 4.43 avg rating — 1,782 ratings</span>            — published 2021
+          </div>
+
+    <div class="addBookTipDescription">
+      
+<span id="freeTextContainer6325363146484231463">An Ideal Society? What is this, a fantasy novel?
+Elaine has been field promoted to a full Range, while at the same time developing her new Celestial healing and Fire magic. Yet Kerberos, her fiancé who'll stop at nothing to get her back, casts a long shadow. Society as a whole would love nothing mor</span>
+  <span id="freeText6325363146484231463" style="display:none">An Ideal Society? What is this, a fantasy novel?
+Elaine has been field promoted to a full Range, while at the same time developing her new Celestial healing and Fire magic. Yet Kerberos, her fiancé who'll stop at nothing to get her back, casts a long shadow. Society as a whole would love nothing more than to grind her down, to remind her that she's a girl, and a second-class individual. Endless dinosaurs roam, looking for tasty, pint-sized teenager snacks. Finally, Perinthus is devastated by a deadly plague, killing hundreds every day.
+
+Elaine must fight the plague with every point of mana she has, while getting used to the horrors of being a Fire mage, breaking free from Kerberos's grasp, and getting to the bottom of things.
+
+If she's lucky, she might even find some delicious mangos.</span>
+  <a data-text-id="6325363146484231463" href="#" onclick="swapContent($(this));; return false;">...more</a>
+
+    </div>
+
+
+</div></div></div></li><li class="borderBottom borderRow" style="height: 6px;"><div class="prototip_CornerWrapper prototip_CornerWrapperBottomLeft"><div class="prototip_Corner prototip_CornerBl" style="width: 6px; height: 6px;"><canvas class="cornerCanvasBl" width="6px" height="6px"></canvas></div></div><div class="prototip_BetweenCorners" style="height: 6px;"><div class="prototip_Between" style="margin: 0px 6px; height: 6px; background-color: rgb(215, 210, 196);"></div></div><div class="prototip_CornerWrapper prototip_CornerWrapperBottomRight"><div class="prototip_Corner prototip_CornerBr" style="width: 6px; height: 6px;"><canvas class="cornerCanvasBr" width="6px" height="6px"></canvas></div></div></li></ul></div></div></div></body>
